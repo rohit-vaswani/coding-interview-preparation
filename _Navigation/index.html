@@ -1,0 +1,65 @@
+
+class Navigation{
+
+    constructor(mapping){
+        this.mapping = mapping;
+    }
+    
+    getFunction(key){
+        return this.mapping[key];
+    }
+
+    performNavigation(navKey  , args){
+        const fn = this.getFunction(navKey);
+        return fn.apply(this  , args);
+    }
+
+}
+
+class PlayerNavigation extends Navigation{
+
+    /*
+
+        TODO_LEARNING: 
+            1. Whenever if/else is coming it means you are doing shit. You might have to consider solving it with the literal object / class Instance.
+            2. You may either have to define a base class containing the exposed function (getActionBar) or the consistent interface across Modules or a factory module. (registerVehice / getVehicle)
+            3. a) Action bar in web-2.0 b) api-registry c) handleOperations are the classic example for this.
+            4. Prefer defining the base class containing the common methods which act as an entry point to that Module
+    */
+
+
+    playerMapping = {
+        [ DeviceEnum.QWERTY ]: {
+            w: changeLanguage.bind(this , 1),
+            q: changeLanguage.bind(this , 2)//TODO: This can be better written with reduce            
+        },
+        [ DeviceEnum.CandyBar ] : {
+            1: changeLanguage.bind(this , 1),
+            2: changeLanguage.bind(this , 2),
+            0: toggleAudioSwitch.bind(this , true),
+            9: toggleAudioSwitch.bind(this , false)
+        }
+    }
+
+
+    constructor(deviceType , langObjs){
+        super(playerMapping[deviceType]);
+        this.langs = langObjs;
+    }
+
+
+    changeLanguage(key){
+        //Based on that key, a lang will be returned.
+    }
+
+    toggleAudioSwitch(show){
+
+    }
+
+
+}
+
+class MenuNavigation extends Navigation{
+
+
+}
