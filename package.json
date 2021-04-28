@@ -1,0 +1,14 @@
+{
+  "name": "coding-interview-preparation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rohit-vaswani/coding-interview-preparation.git",
+  "author": "<rohit.vaswani@fancode.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
