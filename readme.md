@@ -10,17 +10,19 @@
 2. TODO_PENDING:        The task is pending and/or the problem is not completely solved.
 3. TODO_SOLUTION:       Must look at the solution entirely.
 4. TODO_DS_MULTI:       It takes multiple data structure to solve the problem.
-5. TODO_DS_GRAPH:       Graph datastructure is used to solve the problem
-6. TODO_CO_GOOGLE:      Asked in Google
-7. TODO_DS_STACK:       Stack datastructure is used
-7. TODO_DS_MAP:         Map datastructure is used.
+5. TODO_DS_GRAPH:       Graph data structure is used to solve the problem
+6. TODO_DS_STACK:       Stack data structure is used
+7. TODO_DS_MAP:         Map data structure is used.
 8. TODO_AG_GREEDY:      Greedy algorithm
 9. TODO_DS_BINARY_HEAP: Min or Max binary heap. Used in Heap Sort and Prim's algorithm (Greedy algorithms)
 10. TODO_DS_PQ:         Priority queue DS.
-11. TODO_DI_Hard:       A hard problem statement
-12. TODO_CO_AMAZON:     Asked in Amazon
-13. TODO_CO_FACEBOOK:   Asked in Facebook
-14. TODO_CO_UBER:       Asked in Uber
+11. TODO_CO_AMAZON:     Asked in Amazon
+12. TODO_CO_FACEBOOK:   Asked in Facebook
+13. TODO_CO_UBER:       Asked in Uber
+14. TODO_CO_GOOGLE:      Asked in Google
+15. TODO_DI_MEDIUM:     Medium complexity problem
+16. TODO_DI_HARD:       A hard problem statement
+17. TODO_DI_EASY:       A easy problem statement
 
 
 
@@ -52,7 +54,7 @@
     a) Recursive call while exploring the adj. vertices of a node
     b) Aggregation: Returns true
  4. nth Stair
-    a) Recusrive call while iterating over possible steps
+    a) Recursive call while iterating over possible steps
     b) Aggregation: Sum
 
  ## Interesting Observation
