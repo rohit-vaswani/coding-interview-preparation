@@ -1,5 +1,9 @@
 /*
+<<<<<<< HEAD
     Source: https://bigfrontend.dev/problem/jest-assertion (161_BFE)
+=======
+    Source: https://bigfrontend.dev/problem/jest-assertion
+>>>>>>> 93be01396548bd4f98d63e2817ad59cb8b7225aa
     Difficulty: TODO_DI_MEDIUM
     Algorithm: ?
     Company: ? TODO_CO_AMAZON | TODO_CO_FACEBOOK | TODO_CO_UBER | TODO_CO_GOOGLE
