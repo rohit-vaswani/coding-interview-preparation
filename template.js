@@ -7,6 +7,8 @@
         Company: TODO_CO_AMAZON | TODO_CO_FACEBOOK | TODO_CO_UBER | TODO_CO_GOOGLE
         DataStructure: TODO_DS_STACK | TODO_DS_GRAPH | TODO_DS_MAP | TODO_DS_QUEUE
         Solution explained: ?
-        TODO_LEARNING:
-            a)
+        TODO_STANDARD_PROBLEM: YES | NO
+        TODO_LEARNING: a)
+        TODO_SMARTNESS: Add wherever necessary
+        TODO_MUST_SOLVE: YES
 */

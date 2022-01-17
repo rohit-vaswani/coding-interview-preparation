@@ -144,6 +144,7 @@ https://www.youtube.com/watch?v=FO7VXDfS8Gk&t=3s
 3. Heapify is the BEST solution to find the MAX/MIN and to do in-place sorting in n*log(n)
 4. If you have to break the loop or continue the loop, never prefer .reduce
 5. Bucket sort should be used to perform the lookup in an efficient manner.
+6. Always identify the case first. Handle them one-by-one. This makes the problem easy. [e.g: lodash-set]
 
 ## Recursive approach
 1. Make yourself **fool** that a recusrive call will return the correct answer.
