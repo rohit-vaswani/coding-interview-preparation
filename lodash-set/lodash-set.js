@@ -1,5 +1,5 @@
 /*
-        Source: https://bigfrontend.dev/problem/lodash-set
+        Source: https://bigfrontend.dev/problem/lodash-set (156_BFE)
         Difficulty: TODO_DI_MEDIUM
         Algorithm: ?
         Company: ?
@@ -25,6 +25,7 @@
             f) Always identify the case first. Handle them one-by-one. This makes the problem easy.
             g) Always complete the main flow using helper function.
         TODO_MUST_SOLVE: YES
+
 */
 
 
@@ -87,7 +88,7 @@ const set = (_object = {}, path, value) => {
         else if (obj[key] === undefined) {
 
             // Number
-            if (String(Number(normalizedPath[i])) === normalizedPath[i]) { // TODO_SMARTNESS: To distinguish `01` from `1`
+            if (String(Number(normalizedPath[i])) === normalizedPath[i]) { // TODO_REMEMBER: To distinguish `01` from `1`
                 obj[key] = []
             } else {
                 obj[key] = {}

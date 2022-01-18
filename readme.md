@@ -23,6 +23,12 @@
 15. TODO_DI_MEDIUM:     Medium complexity problem
 16. TODO_DI_HARD:       A hard problem statement
 17. TODO_DI_EASY:       A easy problem statement
+18. TODO_REMEMBER:      Please revise the hacks/tricks used to get away with a problem.
+19. TODO_MUST_SOLVE:    A Problem which u must solve again as it need hands-on.
+20. TODO_STANDARD_PROBLEM A Problem whose fundamentals can be used to solve multiple problems
+21. TODO_LEARNING       Solving a problem has some takeaways, which are jotted down.
+22. TODO_SOLUTION       Steps taken to solve that problem.
+23. TODO_QUESTIONS_ASKED Questions which generally arises when solving that problem.
 
 
 
@@ -133,7 +139,7 @@ https://www.youtube.com/watch?v=FO7VXDfS8Gk&t=3s
 6. **Make use of helper functions and complete the flow FIRST**
 7. What should come first
     a) A logical problem - **Make use of helper functions and complete the flow FIRST**
-    b) Recusrive problem - **Think, understand and define the base cases FIRST. Aggregate and Converge your non-base case towards base case**
+    b) Recursive problem - **Think, understand and define the base cases FIRST. Aggregate and Converge your non-base case towards base case**
     c) A Complex problem - **Declare Interfaces and API methods first. Implement them later**
 
 
@@ -145,6 +151,8 @@ https://www.youtube.com/watch?v=FO7VXDfS8Gk&t=3s
 4. If you have to break the loop or continue the loop, never prefer .reduce
 5. Bucket sort should be used to perform the lookup in an efficient manner.
 6. Always identify the case first. Handle them one-by-one. This makes the problem easy. [e.g: lodash-set]
+7. When dealing with the manipulation on array/objects, prefer putting comment as intermediate expected output. Helps better visualising the problem.
+
 
 ## Recursive approach
 1. Make yourself **fool** that a recusrive call will return the correct answer.
