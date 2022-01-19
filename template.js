@@ -13,3 +13,8 @@
         TODO_REMEMBER: Add wherever necessary
         TODO_SOLUTION:
 */
+
+/*
+    SOME DS: Arrays, Stacks, Queue, LinkedList, Trees, Heaps
+
+ */
