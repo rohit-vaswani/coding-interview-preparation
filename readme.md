@@ -29,6 +29,7 @@
 21. TODO_LEARNING       Solving a problem has some takeaways, which are jotted down.
 22. TODO_SOLUTION       Steps taken to solve that problem.
 23. TODO_QUESTIONS_ASKED Questions which generally arises when solving that problem.
+24. TODO_APPROACH_TWO_POINTER: Use two pointers to solve the problem
 
 
 

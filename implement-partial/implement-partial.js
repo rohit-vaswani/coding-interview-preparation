@@ -5,6 +5,7 @@
         Algorithm: ?
         Company: ?
         DataStructure: ?
+        TODO_INTERESTING: YES
         TODO_STANDARD_PROBLEM: NO
         TODO_MUST_SOLVE: NO
         TODO_LEARNING:
