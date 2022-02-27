@@ -13,6 +13,11 @@
         140. https://bigfrontend.dev/problem/virtual-DOM-III-Functional-Component
         137. https://bigfrontend.dev/problem/binary-tree-vertical-traversal
         134. https://bigfrontend.dev/problem/create-your-own-Cookie
+        129. https://bigfrontend.dev/problem/bigdecimal-division
+        128. https://bigfrontend.dev/problem/bigdecimal-multiplication
+        127. https://bigfrontend.dev/problem/bigdecimal-subtraction
+        126. https://bigfrontend.dev/problem/decimal-addition
+
 
 
 
