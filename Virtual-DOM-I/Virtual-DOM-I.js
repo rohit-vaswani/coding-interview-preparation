@@ -12,8 +12,8 @@
         TODO_QUESTIONS:
             a)
         TODO_TAKEAWAY:
-            a) To simplify, you breakdown the problem statement into sub-problems.
-            b) For render, you identified -> create Node, add ClassName, add Children, add props
+            a) Breakdown the problems into the steps to solve that problem.
+            b) For render, you identified the steps as -> create Node, add ClassName, add Children, add props.
         TODO_REMEMBER:
             a) Object.entries(obj) ==> for(let [key, value] of Object.entries(obj))
             b) new Set('abc') ==> for(let [key, value] of set.entries())
