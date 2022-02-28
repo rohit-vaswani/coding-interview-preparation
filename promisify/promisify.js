@@ -5,7 +5,7 @@
         Company: ?
         DataStructure: ?
         Solution explained: ?
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a) Always stick to the input and output point of view
 */
 

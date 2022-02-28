@@ -2,7 +2,7 @@
 
     Source: https://www.youtube.com/watch?v=eaYX0Ee0Kcg&t=65s
     Asked in: Amazon
-    TODO_LEARNING: Max heap maintains the object holding value and the max/min value. Replaces once the next value is small/big as per the requirement.
+    TODO_TAKEAWAY: Max heap maintains the object holding value and the max/min value. Replaces once the next value is small/big as per the requirement.
 
 */
 
@@ -13,7 +13,7 @@ const kthClosest = (input , k) => {
     const square = val => val*val;
     const getDistance = ([a,b]) => Math.sqrt( square(a) + square(b) );
     const valueMap = input.reduce( (acc , val) =>  {acc[val] = getDistance(val);return acc} , {});
-    const sortedArray = Object.keys(valueMap).sort( (a , b) => valueMap[a] > valueMap[b] ? 1 : -1);//TODO_LEARNING: This is an expensive operation. Can be optimized with Max heap.
+    const sortedArray = Object.keys(valueMap).sort( (a , b) => valueMap[a] > valueMap[b] ? 1 : -1);//TODO_TAKEAWAY: This is an expensive operation. Can be optimized with Max heap.
     return sortedArray.slice( 0 ,  k);
 
 }

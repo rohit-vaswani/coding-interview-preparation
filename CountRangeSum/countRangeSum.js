@@ -22,7 +22,7 @@ function getCombinations(arr , start = 0, end = 1, len , combs = [], lower , upp
         return combs;
     }
     
-    //TODO_LEARNING: An alternative recursive and liner approach to a nested iterative approach
+    //TODO_TAKEAWAY: An alternative recursive and liner approach to a nested iterative approach
     if(end === len ){
         start++;
         end = start;

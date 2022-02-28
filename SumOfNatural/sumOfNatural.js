@@ -4,7 +4,7 @@
 
     Source: https://projecteuler.net/problem=1
     Asked in: Dummy Google question
-    TODO_LEARNING: Such a crisp code and a great functional way of writing the code with functional paradign ES6.
+    TODO_TAKEAWAY: Such a crisp code and a great functional way of writing the code with functional paradign ES6.
 
 */
 

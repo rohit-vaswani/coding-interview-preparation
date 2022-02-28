@@ -8,7 +8,7 @@
         TODO_BENCHMARK: YES
         TODO_STANDARD_PROBLEM: NO
         TODO_NEED_PRACTICE: NO
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a) Symbol is a built-in object whose constructor returns a symbol primitive. More here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
         TODO_REMEMBER:
             a)

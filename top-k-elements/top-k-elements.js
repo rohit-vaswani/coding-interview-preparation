@@ -9,7 +9,7 @@
         DataStructure: ?
         TODO_STANDARD_PROBLEM: YES
         TODO_NEED_PRACTICE: YES (Needs practice)
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a) Heap is a complete binary tree.
             b) Complexity: O(1): to access min/max element. O(log n) to insert/delete an element.
             c) heapify: Process of balancing the tree, as tree gets unblanaced after removing the node.

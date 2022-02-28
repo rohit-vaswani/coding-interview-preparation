@@ -22,7 +22,7 @@ function codeJamonCipher(cipherStr , vocabulary){
 }
 
 function printCombinbationRecursively(vocMap , start , cipherLen , answer , finalAnswer = []){
-    //TODO_LEARNING: How we are combining the answers of recursive problem into finalAnswer and then returning it at the end
+    //TODO_TAKEAWAY: How we are combining the answers of recursive problem into finalAnswer and then returning it at the end
 
     let vocValueObject, isTargetWord;
 

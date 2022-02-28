@@ -1,7 +1,7 @@
 /*
 
     Source: https://lodash.com/docs/4.17.11#pullAll
-    TODO_LEARNING: 
+    TODO_TAKEAWAY: 
         1. Always think about the input and output first.
         2. then, how to divide them as pure functions.
         3. Them implement them.

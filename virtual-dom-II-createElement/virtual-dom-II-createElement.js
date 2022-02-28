@@ -12,7 +12,7 @@
         TODO_BENCHMARK: NO
         TODO_QUESTIONS:
             a)
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a) Event Delegation
              - Instead of registering the event handler against each element, we take the advantage of the event bubbling.
              - Register an event on the common ancestor, capture the event with target in check.

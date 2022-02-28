@@ -9,7 +9,7 @@
 
 const longestCommonPrefix = (input) => {
 
-    return checkCommonPrefix(input , input[0] , 1);//TODO_LEARNING: Have defined a recusrive function
+    return checkCommonPrefix(input , input[0] , 1);//TODO_TAKEAWAY: Have defined a recusrive function
 
     function checkCommonPrefix(input , refString , endIndex){
         

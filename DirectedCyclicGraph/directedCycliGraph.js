@@ -64,7 +64,7 @@ console.log('Output: Has Cycles : ' , hasCycles);
      let len = adjVertices.length;
      let currentVertex = null;
      let hasLoop = false;
-     for (let i = 0; i < len; i++) {//TODO_LEARNING: How this loop has been used for the DFS. This is an alternative of thr stack
+     for (let i = 0; i < len; i++) {//TODO_TAKEAWAY: How this loop has been used for the DFS. This is an alternative of thr stack
          currentVertex = adjVertices[i];
          if (blackSet.has(currentVertex)) {
              continue;

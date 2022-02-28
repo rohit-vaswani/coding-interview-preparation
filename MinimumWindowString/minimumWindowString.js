@@ -56,7 +56,7 @@ const slidingWindowSol = (source , target) => {
 
     let leftPointer = 0, rightPointer = 0;
     let answer = Array(20).fill('').join(' ');
-    const [sourceArr , targetArr] = [source , target].map( val => Array.from(val) );//TODO_LEARNING: Transformation in one go.
+    const [sourceArr , targetArr] = [source , target].map( val => Array.from(val) );//TODO_TAKEAWAY: Transformation in one go.
     const targetMap = targetArr.reduce( (acc , val) => {
         acc[val] = 1;
         return acc;
@@ -69,7 +69,7 @@ const slidingWindowSol = (source , target) => {
     while(true){
         
         subArray = sourceArr.slice(leftPointer , rightPointer);
-        hasTargetCharacters = isTargetPreset( subArray );//TODO_LEARNING: Always breakdown the functionality into the functions
+        hasTargetCharacters = isTargetPreset( subArray );//TODO_TAKEAWAY: Always breakdown the functionality into the functions
         subArrayLength = subArray.length;
 
         if(rightPointer>sourceLen && !hasTargetCharacters){

@@ -9,7 +9,7 @@
     Company: ? TODO_CO_AMAZON | TODO_CO_FACEBOOK | TODO_CO_UBER | TODO_CO_GOOGLE
     DataStructure: ? TODO_DS_STACK | TODO_DS_GRAPH | TODO_DS_MAP | TODO_DS_QUEUE
     Solution explained: https://www.youtube.com/watch?v=Rs6ox8biWHE
-    TODO_LEARNING:
+    TODO_TAKEAWAY:
         a) Function that behave like an object, with get function.
         b) Always think first from input and output
         c) Take advantage of closure to access the enclosed data.

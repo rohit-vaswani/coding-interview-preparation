@@ -10,7 +10,7 @@
         TODO_BENCHMARK: NO
         TODO_QUESTIONS:
             a)
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a)
         TODO_REMEMBER:
             a)

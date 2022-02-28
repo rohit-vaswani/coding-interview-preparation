@@ -10,7 +10,7 @@
         TODO_BENCHMARK: YES
         TODO_QUESTIONS:
             a)
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a) Identify the Input and output first
             b) Define the cases, base and non-base. Handle them one-by-one.
         TODO_REMEMBER:

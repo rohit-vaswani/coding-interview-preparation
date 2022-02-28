@@ -2,7 +2,7 @@
 
     Source: CS Dojo Youtube channel
     Asked in: TODO_CO_Google
-    TODO_LEARNING: One of the smart question that I encountered.
+    TODO_TAKEAWAY: One of the smart question that I encountered.
     Approach: Dynamic programming (Recursive)
     TODO_PENDING: Copy the link of the YT channel.
 

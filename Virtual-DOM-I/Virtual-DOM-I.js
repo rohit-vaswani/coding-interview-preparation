@@ -1,5 +1,5 @@
 /*
-        Source: https://bigfrontend.dev/problem/Virtual-DOM-I
+        Source: https://bigfrontend.dev/problem/Virtual-DOM-I (113_BFE)
         Solution link: ?
         Difficulty: TODO_DI_MEDIUM
         Algorithm: ?
@@ -11,7 +11,7 @@
         TODO_BENCHMARK: YES
         TODO_QUESTIONS:
             a)
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a) To simplify, you breakdown the problem statement into sub-problems.
             b) For render, you identified -> create Node, add ClassName, add Children, add props
         TODO_REMEMBER:

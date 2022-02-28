@@ -8,7 +8,7 @@
             a) Remove one node from the start, push it's child node at the end. Do this one at a time (<1 condition) - BFS
             b) Keep the reference of the previously *removed node* from the start.
             c) Link: https://bigfrontend.dev/problem/previous-left-sibling/discuss/4231
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a) value and children is the representation of multi-node tree. [children is an array].
             b) Root node is an object.
             c) shift and unshift are equivalent to pop/push on the first node.

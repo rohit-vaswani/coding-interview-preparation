@@ -8,7 +8,7 @@
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
         TODO_NEED_PRACTICE: NO
-        TODO_LEARNING: a)
+        TODO_TAKEAWAY: a)
         TODO_REMEMBER:
             a) replaceAll takes second argument as replacer function too.
         TODO_SOLUTION:

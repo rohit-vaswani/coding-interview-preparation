@@ -25,8 +25,8 @@ const pythagoreanTriplet = (input) => {
         for( let k = ind + 1; k < len ; k++ ){
             currentVal = squaredArray[k];
             diff = targetVal - currentVal;
-            isDiffPresent = !!valueMap[diff];//TODO_LEARNING: Lookup using Map DS. (And not an array)
-            //TODO_LEARNING: We are doing lookup for the required value instead of searching with 3rd level of iteration
+            isDiffPresent = !!valueMap[diff];//TODO_TAKEAWAY: Lookup using Map DS. (And not an array)
+            //TODO_TAKEAWAY: We are doing lookup for the required value instead of searching with 3rd level of iteration
             if(isDiffPresent){ 
                 answer = [  diff , currentVal , targetVal ];
                 break;

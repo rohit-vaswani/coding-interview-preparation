@@ -30,7 +30,7 @@ let getAscRemainingChars = (outOfOrderChar , remainingChars , nextInOrderChar) =
 }
 
 
-//TODO_LEARNING: Think about the driver function with an example to make it easy to understand
+//TODO_TAKEAWAY: Think about the driver function with an example to make it easy to understand
 function getNextPermutation(word){
 
     let chars = [...word];

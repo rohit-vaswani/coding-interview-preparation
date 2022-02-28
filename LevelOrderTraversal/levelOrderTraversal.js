@@ -20,7 +20,7 @@ const levelOrderTraversal = (inputArray) => {
     
     while(true){
         
-        slicedArray = inputArray.slice(startIndex , lastIndex).filter( val => !!val );//TODO_LEARNING: Keep it simple as startIndex and lastIndex
+        slicedArray = inputArray.slice(startIndex , lastIndex).filter( val => !!val );//TODO_TAKEAWAY: Keep it simple as startIndex and lastIndex
         if(!slicedArray.length){return output};
 
         output.push(slicedArray);

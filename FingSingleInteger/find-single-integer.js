@@ -9,7 +9,7 @@
         Company: ?
         DataStructure: ?
         Solution explained: ?
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a) XOR of a number with itself results Zero. and XOR of a number with 0 results the number itself.
 */
 

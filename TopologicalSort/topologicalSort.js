@@ -98,7 +98,7 @@ class Stack{
 
 }
 
-//TODO_LEARNING: Define fn's with `Util` as suffix.
+//TODO_TAKEAWAY: Define fn's with `Util` as suffix.
 let areAllVerticesVisited = (vertices, visistedVerticesMaps) => vertices.every( v => visistedVerticesMaps.has(v) );
 let getUnvisitedVertexUtil = (vertices ,  visistedVerticesMap) => vertices.find( vertex => !visistedVerticesMap.has(vertex) );
 let checkAllParentVerticesVisistedUtil = (vertices , visitedVerticesMap) => vertices.every( vertex => visitedVerticesMap.has(vertex) );
@@ -106,7 +106,7 @@ let checkAllParentVerticesVisistedUtil = (vertices , visitedVerticesMap) => vert
 //Driver function
 function dfsGraphTraversal(graph){
 
-    //TODO_LEARNING: Keep your code functional
+    //TODO_TAKEAWAY: Keep your code functional
 
     let traversalStack = new Stack();
     let visitedVerticesMap = new Map();

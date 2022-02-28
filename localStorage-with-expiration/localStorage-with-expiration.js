@@ -14,7 +14,7 @@
             b) what if expiryTime is not defined, default value? - Persist lifeTime
             c) What if expiryTime is 0? - Do not set
             d) Can I use built-in window.localStorage?
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a) In arrow functions, this refers to the object defined that function. In normal function, this refers to the ref to the object invoking that function.
         TODO_REMEMBER:
             a)

@@ -7,7 +7,7 @@
         DataStructure: ?
         TODO_STANDARD_PROBLEM: YES | NO
         TODO_NEED_PRACTICE: NO
-        TODO_LEARNING: ?
+        TODO_TAKEAWAY: ?
         TODO_REMEMBER:
             a) Object.defineProperty helps you to attach getter and setter to a property of that object.
             b) While get and set keyword on an object will help to convert a property into the function.

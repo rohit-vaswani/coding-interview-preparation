@@ -6,7 +6,7 @@
 
 ## Different keywords used
 
-1. TODO_LEARNING:       That teaches you something
+1. TODO_TAKEAWAY:       That teaches you something
 2. TODO_PENDING:        The task is pending and/or the problem is not completely solved.
 3. TODO_SOLUTION:       Must look at the solution entirely.
 4. TODO_DS_MULTI:       It takes multiple data structure to solve the problem.

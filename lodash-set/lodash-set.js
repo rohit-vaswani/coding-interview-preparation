@@ -16,7 +16,7 @@
             c) if the path does not exists -> create it (index -> Array, string -> object)
             d) When path is an array, do we expect bracket access specifier
         TODO_STANDARD_PROBLEM: YES
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a) Property access expressions: dot, square bracket
             b) When any problem is given, try to identify sub problem into it (normalising the path into single format and expression)
             c) To Access array element, if index if string. It will work normal as int.

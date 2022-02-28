@@ -7,7 +7,7 @@
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
         TODO_NEED_PRACTICE: NO
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a)
         TODO_REMEMBER:
             a) if initialValue is not provided to reduce, it consider first value as it's initial value (Skip one iteration)

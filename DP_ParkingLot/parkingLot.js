@@ -12,9 +12,9 @@ class ParkingLot{
 
     constructor(){
 
-        this.vehicles = new vehicleManager(); //TODO_LEARNING: This is much similar to heartbeat API. A very great separation of concern.
+        this.vehicles = new vehicleManager(); //TODO_TAKEAWAY: This is much similar to heartbeat API. A very great separation of concern.
         this.slots = new SlotsManager();
-        this.vehicleHashMap = new Map();      //TODO_LEARNING: To improve the lookup as O(1) and act as joining the two tables.        
+        this.vehicleHashMap = new Map();      //TODO_TAKEAWAY: To improve the lookup as O(1) and act as joining the two tables.        
 
     }
 
@@ -36,10 +36,10 @@ class ParkingLot{
 
 }
 
-//TODO_LEARNING: This is an abstract design pattern
+//TODO_TAKEAWAY: This is an abstract design pattern
 const vehicleFactory = () => {
 
-    //TODO_LEARNING: This should be a ENUM rather
+    //TODO_TAKEAWAY: This should be a ENUM rather
     let vehicles = {
         'TRUCK': Truck,
         'CAR': Car

@@ -17,7 +17,7 @@ function getMinGasStationIndex(gasFills , cost){
     for(i = 0; i < len; i++){
 
         startIndex = i;
-        doesCompleteCircuit = canTravel(startIndex , gasFills , cost );//TODO_LEARNING: Always think about your implementation as asbtraction first.
+        doesCompleteCircuit = canTravel(startIndex , gasFills , cost );//TODO_TAKEAWAY: Always think about your implementation as asbtraction first.
         if(doesCompleteCircuit){break};
 
     }
@@ -35,11 +35,11 @@ function canTravel(startIndex , gasFills , cost ){
         gasFilled = 0,
         iterator = startIndex,
         costLength = cost.length,
-        canBeTravelled = true,//TODO_LEARNING: make a hypothesis and then prove it wrong.
+        canBeTravelled = true,//TODO_TAKEAWAY: make a hypothesis and then prove it wrong.
         times = 0;
     
 
-    while( canBeTravelled && times <= costLength){//TODO_LEARNING: The condition has to be readable and understandable. Be realistic.
+    while( canBeTravelled && times <= costLength){//TODO_TAKEAWAY: The condition has to be readable and understandable. Be realistic.
 
         gasFilled = gasFills[iterator];
         costIncur = cost[iterator];

@@ -1,6 +1,6 @@
 /*
 
-    TODO_LEARNING: This is like a epic thing.
+    TODO_TAKEAWAY: This is like a epic thing.
     Source: Asked in the Hotstar Interview
 
 

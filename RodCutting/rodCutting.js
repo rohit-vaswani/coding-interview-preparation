@@ -24,7 +24,7 @@ function maxCost(price , len){
     let i = 0;
     let priceLen = price.length;
     for(i=0; i<priceLen; i++){
-        maxVal = Math.max(maxVal , price[i] + maxCost(price, len-i-1));//TODO_LEARNING: Dynamic programming - A truly recursive approach
+        maxVal = Math.max(maxVal , price[i] + maxCost(price, len-i-1));//TODO_TAKEAWAY: Dynamic programming - A truly recursive approach
     }
 
     return maxVal;

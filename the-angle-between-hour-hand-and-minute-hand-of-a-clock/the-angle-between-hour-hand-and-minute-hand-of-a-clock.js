@@ -11,7 +11,7 @@
         TODO_BENCHMARK: NO
         TODO_QUESTIONS:
             a)
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a) parseInt takes the second argument as base
         TODO_REMEMBER:
             a) parseInt takes the second argument as base

@@ -30,7 +30,7 @@ getKLargest(inputArray);
 
 /*
 
-TODO_LEARNING:
+TODO_TAKEAWAY:
 1. To use the bubble sort
 
 */

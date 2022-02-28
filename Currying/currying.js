@@ -1,7 +1,7 @@
 /*
 
     Source: https://theanubhav.com/2019/02/03/js-currying-in-interview/#what-is-currying
-    TODO_Learning:
+    TODO_TAKEAWAY:
         1. valueOf: This method (non-prototype) is called when browser is expecting the primite value of an object.
         2. Closures are the best way and when combined with Function.prototype it becomes really powerful. Use it.
 

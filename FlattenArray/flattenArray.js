@@ -7,7 +7,7 @@
 const flattenDeep = (arr , level , maxLevel) => {  
     return arr.reduce( (acc , val) => {
         if(Array.isArray(val) && level<maxLevel){            
-            val = flattenDeep(val , level+1 , maxLevel );//TODO_LEARNING: We are doing +1 as we don't want to update for all of them.
+            val = flattenDeep(val , level+1 , maxLevel );//TODO_TAKEAWAY: We are doing +1 as we don't want to update for all of them.
             acc = acc.concat(val);
             return acc;
         }
@@ -16,9 +16,9 @@ const flattenDeep = (arr , level , maxLevel) => {
     } , []);
 }
 
-//TODO_LEARNING: Have return one of the best solution
+//TODO_TAKEAWAY: Have return one of the best solution
 const flatten = arr => {  
-    if(!Array.isArray(arr)){return arr};//TODO_LEARNING: have defined the base condition for a recursive problem
+    if(!Array.isArray(arr)){return arr};//TODO_TAKEAWAY: have defined the base condition for a recursive problem
     return arr.reduce( (acc , val) => acc.concat(flatten(val)), []);
 }
 

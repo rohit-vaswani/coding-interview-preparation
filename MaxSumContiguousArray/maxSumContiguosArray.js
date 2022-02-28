@@ -23,7 +23,7 @@ function maxSubArray(arr){
 
         while(j<len){
 
-            sum += arr[j];//TODO_LEARNING: You can just add A[j] to the sum you have already calculated in the previous loop from i to j-1. This will reduce the complexity from o(n^3) to o(n^2)
+            sum += arr[j];//TODO_TAKEAWAY: You can just add A[j] to the sum you have already calculated in the previous loop from i to j-1. This will reduce the complexity from o(n^3) to o(n^2)
             currentComb.push(arr[j]);
 
             if(sum > maxSum){

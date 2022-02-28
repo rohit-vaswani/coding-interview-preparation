@@ -6,7 +6,7 @@
 
 
 
-const folderStructure = [//TODO_LEARNING: For recursive, we should be able to define the recurring problem/solution. Hence, the schema is kept consistent
+const folderStructure = [//TODO_TAKEAWAY: For recursive, we should be able to define the recurring problem/solution. Hence, the schema is kept consistent
     {
         "name": "File 1",
         "children":[
@@ -44,7 +44,7 @@ const folderStructure = [//TODO_LEARNING: For recursive, we should be able to de
 ]
 
 function print(name , level){
-    console.log( new Array(level).fill('  ').join('') + ' - ' + name );//TODO_LEARNING: We have used fill
+    console.log( new Array(level).fill('  ').join('') + ' - ' + name );//TODO_TAKEAWAY: We have used fill
 }
 
 const drawFolderStructure = (folderArray = [] , level) => {
@@ -57,4 +57,4 @@ const drawFolderStructure = (folderArray = [] , level) => {
 }
 
 
-drawFolderStructure( folderStructure , 0 );//TODO_LEARNING: This is how we should invoke recursive
+drawFolderStructure( folderStructure , 0 );//TODO_TAKEAWAY: This is how we should invoke recursive

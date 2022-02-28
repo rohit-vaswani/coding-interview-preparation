@@ -25,7 +25,7 @@ class PriorityQueue{
         return this._arr.splice(  0 , 1 );
     }
 
-    _isEmpty(){//TODO_LEARNING: We can call this as a helper method
+    _isEmpty(){//TODO_TAKEAWAY: We can call this as a helper method
         return !this._arr.length;
     }
 

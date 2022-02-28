@@ -6,7 +6,7 @@
         DataStructure: ?
         Solution explained: ?
         TODO_STANDARD_PROBLEM: NO
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a) break, continue and return does not really work in forEach and reduce statement.
 */
 

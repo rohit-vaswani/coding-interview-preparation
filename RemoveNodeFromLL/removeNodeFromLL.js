@@ -36,7 +36,7 @@ class LinkedList{
             if(!node.right){return;}
             node = node.right;
             logCurrentNode(node);
-        }(this.root));//TODO_LEARNING: How this has been done re-cursively with the function definition
+        }(this.root));//TODO_TAKEAWAY: How this has been done re-cursively with the function definition
 
     }
 
@@ -46,7 +46,7 @@ class LinkedList{
             targetNode = targetNode.parent;
             lastIndex--;
         }
-        targetNode.parent.right = targetNode.right;//TODO_LEARNING: A statement that helped me to achieve in O(n) iteration
+        targetNode.parent.right = targetNode.right;//TODO_TAKEAWAY: A statement that helped me to achieve in O(n) iteration
     }
 }
 

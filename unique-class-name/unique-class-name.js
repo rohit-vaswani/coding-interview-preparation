@@ -7,7 +7,7 @@
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
         TODO_NEED_PRACTICE: NO
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a)
         TODO_REMEMBER:
             a) String.fromCharCode converts a code to char

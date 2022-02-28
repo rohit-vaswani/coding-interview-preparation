@@ -11,7 +11,7 @@
         TODO_BENCHMARK: NO
         TODO_QUESTIONS:
             a)
-        TODO_LEARNING:
+        TODO_TAKEAWAY:
             a)
         TODO_REMEMBER:
             a) 0 and -0 are equal as per strict equality check are same.
