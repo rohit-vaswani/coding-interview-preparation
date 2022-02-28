@@ -6,7 +6,7 @@
         Company: ?
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
-        TODO_MUST_SOLVE: NO
+        TODO_NEED_PRACTICE: NO
         TODO_LEARNING:
             a) setter and getter function cannot be written using arrow functions
         TODO_REMEMBER:

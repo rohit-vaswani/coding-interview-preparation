@@ -24,7 +24,7 @@
             e) we do have replaceAll as string prototype.
             f) Always identify the case first. Handle them one-by-one. This makes the problem easy.
             g) Always complete the main flow using helper function.
-        TODO_MUST_SOLVE: YES
+        TODO_NEED_PRACTICE: YES
 
 */
 

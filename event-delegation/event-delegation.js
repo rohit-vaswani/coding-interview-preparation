@@ -6,9 +6,9 @@
         Company: ?
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
-        TODO_MUST_SOLVE: NO
+        TODO_NEED_PRACTICE: NO
         TODO_MEMORIZE: NO
-        TODO_INTERESTING: NO
+        TODO_BENCHMARK: NO
         TODO_QUESTIONS:
             a)
         TODO_LEARNING:

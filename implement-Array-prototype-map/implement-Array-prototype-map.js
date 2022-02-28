@@ -6,7 +6,7 @@
         Company: ?
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
-        TODO_MUST_SOLVE: YES
+        TODO_NEED_PRACTICE: YES
         TODO_LEARNING:
             a) Arrow functions does not hav argument binding. (Access to closest normal functions arguments)
             b) Arrow function does not have their own this. They have this of the nearest normal function/object

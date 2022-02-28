@@ -7,7 +7,7 @@
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
         TODO_INTERESTING_PROBLEM: YES
-        TODO_MUST_SOLVE: NO
+        TODO_NEED_PRACTICE: NO
         TODO_LEARNING:
             a)
         TODO_REMEMBER:

@@ -7,8 +7,8 @@
         Company: ?
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
-        TODO_MUST_SOLVE: NO
-        TODO_INTERESTING: YES
+        TODO_NEED_PRACTICE: NO
+        TODO_BENCHMARK: YES
         TODO_QUESTIONS:
             a) API methods should I define - setItem, getItem, removeItem, clear? - Defina ll
             b) what if expiryTime is not defined, default value? - Persist lifeTime

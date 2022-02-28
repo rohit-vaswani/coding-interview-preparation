@@ -24,7 +24,7 @@
 16. TODO_DI_HARD:       A hard problem statement
 17. TODO_DI_EASY:       A easy problem statement
 18. TODO_REMEMBER:      Please revise the hacks/tricks used to get away with a problem.
-19. TODO_MUST_SOLVE:    A Problem which u must solve again as it need hands-on.
+19. TODO_NEED_PRACTICE:    A Problem which u must solve again as it need hands-on.
 20. TODO_STANDARD_PROBLEM A Problem whose fundamentals can be used to solve multiple problems
 21. TODO_LEARNING       Solving a problem has some takeaways, which are jotted down.
 22. TODO_SOLUTION       Steps taken to solve that problem.

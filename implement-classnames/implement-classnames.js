@@ -6,8 +6,8 @@
         Company: ?
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
-        TODO_MUST_SOLVE: NO
-        TODO_INTERESTING: YES
+        TODO_NEED_PRACTICE: NO
+        TODO_BENCHMARK: YES
         TODO_QUESTIONS:
             a)
         TODO_LEARNING:

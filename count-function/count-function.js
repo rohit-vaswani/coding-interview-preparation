@@ -9,7 +9,7 @@
         TODO_REMEMBER:
             a) A function is an object, and can have properties attached to it.
             b) IFFY is created to create the state and keep track of the invocations.
-        TODO_MUST_SOLVE: NO
+        TODO_NEED_PRACTICE: NO
 */
 
 

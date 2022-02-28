@@ -5,9 +5,9 @@
         Algorithm: ?
         Company: ?
         DataStructure: ?
-        TODO_INTERESTING: YES
+        TODO_BENCHMARK: YES
         TODO_STANDARD_PROBLEM: NO
-        TODO_MUST_SOLVE: NO
+        TODO_NEED_PRACTICE: NO
         TODO_LEARNING:
             a) Symbol is a built-in object whose constructor returns a symbol primitive. More here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
         TODO_REMEMBER:

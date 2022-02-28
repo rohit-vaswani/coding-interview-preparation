@@ -8,7 +8,7 @@
         Company: ?
         DataStructure: ?
         TODO_STANDARD_PROBLEM: YES
-        TODO_MUST_SOLVE: YES (Needs practice)
+        TODO_NEED_PRACTICE: YES (Needs practice)
         TODO_LEARNING:
             a) Heap is a complete binary tree.
             b) Complexity: O(1): to access min/max element. O(log n) to insert/delete an element.

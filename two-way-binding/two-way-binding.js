@@ -6,7 +6,7 @@
         Company: ?
         DataStructure: ?
         TODO_STANDARD_PROBLEM: YES | NO
-        TODO_MUST_SOLVE: NO
+        TODO_NEED_PRACTICE: NO
         TODO_LEARNING: ?
         TODO_REMEMBER:
             a) Object.defineProperty helps you to attach getter and setter to a property of that object.

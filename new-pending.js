@@ -17,6 +17,8 @@
         128. https://bigfrontend.dev/problem/bigdecimal-multiplication
         127. https://bigfrontend.dev/problem/bigdecimal-subtraction
         126. https://bigfrontend.dev/problem/decimal-addition
+        115. https://bigfrontend.dev/problem/implement-BigInt-division
+        114. https://bigfrontend.dev/problem/implement-BigInt-multiplication
 
 
 
