@@ -12,8 +12,8 @@
         TODO_QUESTIONS:
             a)
         TODO_TAKEAWAY:
-            a) Convert the problem statement into the english statements of what to be done.
-            b) Write that into javascript.
+            a) Try to understand what kind of transformation/steps, you need to perform to transform the input to output.
+            b) Write each Pass, put it in front of you. Visualise it. Convert that into javascript.
             c) When dealing with string related problems, write it how each iteration/pass should look like from problem to intermediate to solution.
         TODO_REMEMBER:
             a) Set has API -> .add, .has, .entries, .delete
@@ -28,7 +28,7 @@
 /*
 
 
-    1. xyzabcxyzabc
+    Input: xyzabcxyzabc
 
 
     Map:
