@@ -1,5 +1,5 @@
 /*
-        Source: https://bigfrontend.dev/problem/implement-Math-pow
+        Source: https://bigfrontend.dev/problem/implement-Math-pow (109_BFE)
         Solution link: ?
         Difficulty: TODO_DI_EASY
         Algorithm: ?
