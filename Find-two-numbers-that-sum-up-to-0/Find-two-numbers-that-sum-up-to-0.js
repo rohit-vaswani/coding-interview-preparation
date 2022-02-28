@@ -1,5 +1,5 @@
 /*
-        Source: https://bigfrontend.dev/problem/Find-two-numbers-that-sum-up-to-0
+        Source: https://bigfrontend.dev/problem/Find-two-numbers-that-sum-up-to-0 (106_BFE)
         Solution link: ?
         Difficulty: TODO_DI_EASY
         Algorithm: ?
