@@ -7,7 +7,7 @@
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
         TODO_NEED_PRACTICE: NO
-        TODO_MEMORIZE: NO
+        TODO_NEED_REVISION: NO
         TODO_BENCHMARK: NO
         TODO_QUESTIONS:
             a)

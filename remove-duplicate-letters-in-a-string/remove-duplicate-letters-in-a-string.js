@@ -1,5 +1,5 @@
 /*
-        Source: https://bigfrontend.dev/problem/remove-duplicate-letters-in-a-string
+        Source: https://bigfrontend.dev/problem/remove-duplicate-letters-in-a-string (112_BFE)
         Solution link: https://bigfrontend.dev/problem/remove-duplicate-letters-in-a-string/discuss/942
         Difficulty: TODO_DI_MEDIUM
         Algorithm: ?
@@ -7,14 +7,14 @@
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
         TODO_NEED_PRACTICE: NO
-        TODO_MEMORIZE: NO
-        TODO_BENCHMARK: YES
+        TODO_NEED_REVISION: YES
+        TODO_BENCHMARK: NO
         TODO_QUESTIONS:
             a)
         TODO_TAKEAWAY:
             a) Convert the problem statement into the english statements of what to be done.
             b) Write that into javascript.
-            c) When dealing with string related problems, write it how each iteration should look like from problem to intermediate to solution.
+            c) When dealing with string related problems, write it how each iteration/pass should look like from problem to intermediate to solution.
         TODO_REMEMBER:
             a) Set has API -> .add, .has, .entries, .delete
             b) Map has API -> .set, .has, .entries, .delete, .get
@@ -81,30 +81,3 @@ function smallestUniqueSubstr(str) {
 
 const ans = smallestUniqueSubstr('xyzabcxyzabc')
 console.log(ans)
-
-
-
-
-/*
-
-function smallestUniqueSubstr(str) {
-    const stack = [];
-    const inStack = new Set();
-    const lastIndex = new Map();
-    for (let i = 0; i < str.length; i++) {
-        lastIndex.set(str[i], i);
-    }
-    for (let i = 0; i < str.length; i++) {
-        while (str[i] < stack[stack.length - 1] && lastIndex.get(stack[stack.length - 1]) > i) {
-            inStack.delete(stack.pop());
-        }
-        if (!inStack.has(str[i])) {
-            stack.push(str[i]);
-            inStack.add(str[i]);
-        }
-    }
-    return stack.join('');
-}
-
-
- */
