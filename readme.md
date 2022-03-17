@@ -157,6 +157,7 @@ https://www.youtube.com/watch?v=FO7VXDfS8Gk&t=3s
  - For Recursive problems, Identify the base case and non-base-case. []
  - For Complex problems, Identify the DS to be used to solve it. []
  - For Logical/Sequential problems, Divide the problems into parts/cases, tackle them one by one with helper functions. [merge-identical-API-calls]
+ - Solved using regex [https://bigfrontend.dev/problem/validate-an-ip-address]
 
 
 ## Recursive approach
