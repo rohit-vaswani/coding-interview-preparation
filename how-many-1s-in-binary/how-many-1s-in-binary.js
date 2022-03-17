@@ -14,7 +14,7 @@
         TODO_TAKEAWAY:
             a)
         TODO_REMEMBER:
-            a)
+            a) Binary number from decimal number can be created using no/2 & no%2 iteratively
         TODO_SOLUTION:
             a)
 */
