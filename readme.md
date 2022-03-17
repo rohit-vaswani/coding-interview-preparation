@@ -71,7 +71,7 @@
 
 ## Golden rule
 1. If you think it as a recurring problem, see if you can find the base conditions and non-base conditions. (rod-cutting / minpath)
-2. Otherwise, think about the logic and tranlsate it to a high-level logic using helper functions and api-methods
+2. Otherwise, think about the logic and translate it to a high-level logic using helper functions and api-methods
 
 
 ## You should do this
@@ -83,7 +83,7 @@
     
 
 ## Sequences of discussion while in an interview
-1. Seek Clarification: Ask relevant questions and resolve ambigiuity if any. Ask and clarify edge cases.
+1. Seek Clarification: Ask relevant questions and resolve ambiguity if any. Ask and clarify edge cases.
 2. High-level discussion: 
     a) Talk about multiple approaches.
     b) Talk about why this approach is not better.
@@ -105,11 +105,14 @@
 
 
 # Key to success: (https://www.youtube.com/watch?v=kvEZVsHmA34&feature=youtu.be)
-1. Comunication is a key: Think loud and communicate things before you jump to the implementation
+1. Communication is a key: Think loud and communicate things before you jump to the implementation
 2. Creativity is a key: Think about the multiple approaches even if they are un-optimized.
 
-## You should know this-
+## Know this standards
 1. To find the first/last k-elements, you should use bucket sort? No need to sort an array with n*logn. https://www.youtube.com/watch?v=EYFcQRwcqk0
+2. Heapify is the BEST solution to find the MAX/MIN and to do in-place sorting in n*log(n)
+3. If you have to break the loop or continue the loop, never prefer .reduce
+4. Bucket sort should be used to perform the lookup in an efficient manner.
 
 
 ## Approaches/Algorithms
@@ -145,14 +148,15 @@ https://www.youtube.com/watch?v=FO7VXDfS8Gk&t=3s
 
 
 
-# Golden rules
-1. Always complete the flow first with the help of helper functions and interface methods
-2. Be clear with the input and output of the given/written  methods
-3. Heapify is the BEST solution to find the MAX/MIN and to do in-place sorting in n*log(n)
-4. If you have to break the loop or continue the loop, never prefer .reduce
-5. Bucket sort should be used to perform the lookup in an efficient manner.
-6. Always identify the case first. Handle them one-by-one. This makes the problem easy. [e.g: lodash-set]
-7. When dealing with the manipulation on array/objects, prefer putting comment as intermediate expected output. Helps better visualising the problem.
+# Golden rules for Problem solving
+1. Be clear with the input and output of the given/written  methods.
+2. Complete the flow first with the help of helper functions and interface methods.
+3. To better approach the problem
+ - For Iterative problems, write passes of the execution. []
+ - For Manipulation problems, Either put comments against each step for better visualisation. []
+ - For Recursive problems, Identify the base case and non-base-case. []
+ - For Complex problems, Identify the DS to be used to solve it. []
+ - For Logical/Sequential problems, Divide the problems into parts/cases, tackle them one by one with helper functions. [merge-identical-API-calls]
 
 
 ## Recursive approach
