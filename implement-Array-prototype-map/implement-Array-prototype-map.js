@@ -8,7 +8,7 @@
         TODO_STANDARD_PROBLEM: NO
         TODO_NEED_PRACTICE: YES
         TODO_TAKEAWAY:
-            a) Arrow functions does not hav argument binding. (Access to closest normal functions arguments)
+            a) Arrow functions does not have argument binding. (Access to closest normal functions arguments)
             b) Arrow function does not have their own this. They have this of the nearest normal function/object
             c) Arrow functions are only callable, not constructible.
             d) Arrow functions does not allow duplicate arguments
