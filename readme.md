@@ -158,7 +158,16 @@ https://www.youtube.com/watch?v=FO7VXDfS8Gk&t=3s
  - For Complex problems, Identify the DS to be used to solve it. []
  - For Logical/Sequential problems, Divide the problems into parts/cases, tackle them one by one with helper functions. [merge-identical-API-calls]
  - Solved using regex [https://bigfrontend.dev/problem/validate-an-ip-address]
+ - For the complex problems, identify the steps taken to solve the problem
+ - For the NEW Problem, to better understand the problem, write and understand the steps to solve the problem in PLAIN ENGLISH.
 
+ - Steps taken [merge-identical-API-calls]
+ - Helper functions to define
+ - Output intermediate solution to visualise the problems
+ - Plain English to better understand
+ - DS to solve the problems
+ - How each pass shall look like
+ - Sub problems to divide the problem.
 
 ## Recursive approach
 1. Make yourself **fool** that a recusrive call will return the correct answer.
