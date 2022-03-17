@@ -1,5 +1,5 @@
 /*
-        Source: https://bigfrontend.dev/problem/compress-a-string
+        Source: https://bigfrontend.dev/problem/compress-a-string (97_BFE)
         Solution link: ?
         Difficulty: TODO_DI_EASY
         Algorithm: TODO_APPROACH_TWO_POINTER
