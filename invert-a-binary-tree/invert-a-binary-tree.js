@@ -13,6 +13,7 @@
             a)
         TODO_TAKEAWAY:
             a) To better visualise the problem, identify if it is a recursive problem. If yes, identify base and non-base for the easiest example
+            b) To better visualise the problem, always take a simple problem to better understand.
         TODO_REMEMBER:
             a) [a,b] = [b,a] => Best way to swap two variables
         TODO_SOLUTION:

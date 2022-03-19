@@ -168,7 +168,14 @@ https://www.youtube.com/watch?v=FO7VXDfS8Gk&t=3s
  - Identify How each pass/iteration shall look like
  - Identify Steps                                                                       [merge-identical-API-calls]
  - For transformation problem, Output intermediate solution to visualise the problems
+ - To better visualise the problem, always take a simple example to better understand.
+ - 
 
+To tackle the problem:
+ - Can you identify the steps to solve the problem
+ - Can you think that if it is a recursive problem
+ - Can you take a simple example to solve the problem
+ - Can you think of the solution in the Plain English
 
 
 ## Recursive approach
