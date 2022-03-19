@@ -161,7 +161,7 @@ https://www.youtube.com/watch?v=FO7VXDfS8Gk&t=3s
  - For the complex problems, identify the steps taken to solve the problem
  - For the NEW Problem, to better understand the problem, write and understand the steps to solve the problem in PLAIN ENGLISH.
 
- - Identify Helper functions / Data Structures to solve the problem
+ - Identify Helper functions / Data Structures / Built-in methods to solve the problem [write-your-own-instanceof.js]
  - Identify if the problem is a recursive problem, what are the base and non-base steps [fibonacci-number.js, invert-a-binary-tree.js]
  - Identify Algorithm (Recursion / Iteration) to use.
  - Identify the problem in Plain English to better understand                           [throttle.js, throttle-Promises.js]
