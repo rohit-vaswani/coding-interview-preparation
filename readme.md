@@ -161,12 +161,15 @@ https://www.youtube.com/watch?v=FO7VXDfS8Gk&t=3s
  - For the complex problems, identify the steps taken to solve the problem
  - For the NEW Problem, to better understand the problem, write and understand the steps to solve the problem in PLAIN ENGLISH.
 
- - Identify Steps [merge-identical-API-calls]
- - Identify Helper functions / Data Structures / inbuilt methods (Promise.all) to define
- - Output intermediate solution to visualise the problems
- - Plain English to better understand [throttle.js]
- - Identify How each pass shall look like 
- - Identify Sub problems to divide the problem. [fibonacci-number]
+ - Identify Helper functions / Data Structures to solve the problem
+ - Identify if the problem is a recursive problem, what are the base and non-base steps [fibonacci-number.js, invert-a-binary-tree.js]
+ - Identify Algorithm (Recursion / Iteration) to use.
+ - Identify the problem in Plain English to better understand                           [throttle.js, throttle-Promises.js]
+ - Identify How each pass/iteration shall look like
+ - Identify Steps                                                                       [merge-identical-API-calls]
+ - For transformation problem, Output intermediate solution to visualise the problems
+
+
 
 ## Recursive approach
 1. Make yourself **fool** that a recusrive call will return the correct answer.
