@@ -16,8 +16,8 @@
             b) Write each Pass, put it in front of you. Visualise it. Convert that into javascript.
             c) When dealing with string related problems, write it how each iteration/pass should look like from problem to intermediate to solution.
         TODO_REMEMBER:
-            a) Set has API -> .add, .has, .entries, .delete
-            b) Map has API -> .set, .has, .entries, .delete, .get
+            a) Set has API -> .add, .has, .entries, .delete, .clear
+            b) Map has API -> .set, .has, .entries, .delete, .get, .clear
         TODO_SOLUTION:
             a) Create a map maintaining last index of the chat
             b) Everytime you push a char, check last char is greater than current char and last char with higher end index is present in the map.

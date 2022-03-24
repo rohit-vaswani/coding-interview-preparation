@@ -177,6 +177,13 @@ To tackle the problem:
  - Can you take a simple example to solve the problem [support-negative-Array-index]
  - Can you think of the solution in the Plain English
 
+-- Transformation problem, comments
+-- Complex problem, DS
+-- Recursive problem, Recursion
+-- Cases problem, handle
+-- String/Array problem, example [longest-substring-with-unique-characters]
+-- non-comprehensive, english translation
+
 
 ## Recursive approach
 1. Make yourself **fool** that a recusrive call will return the correct answer.
