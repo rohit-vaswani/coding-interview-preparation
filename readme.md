@@ -185,19 +185,17 @@ Approach to take:
 DS or built-in or helper functions
  - Promise.all
 
-Kind of the problem
- - Recursive
- - Complex
- - String/Array problem
- - non-comprehensive problem
- - cases problem
- - Logical problem
 
--- Complex problem, DS
--- Recursive problem, Recursion
--- Cases problem, handle
--- String/Array problem, example and passes [longest-substring-with-unique-characters]
--- non-comprehensive, english translation
+# Golden Rule
+1. Understand the problem, example, input, output and expectations very clearly [create-a-fake-timer-setInterval]
+2. Tackle the problem
+   -- Complex problem, DS.
+   -- Helper/Built-in functions to use.
+   -- Responsibility & Input/Output of each function.
+   -- Recursive problem, Recursion
+   -- Cases problem, handle
+   -- String/Array problem, example and passes [longest-substring-with-unique-characters]
+   -- non-comprehensive, english translation
 
 
 ## Recursive approach
