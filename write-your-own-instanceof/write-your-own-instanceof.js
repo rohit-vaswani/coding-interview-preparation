@@ -23,7 +23,7 @@
         TODO_SOLUTION:
             a) object's `__proto__` is recursively checked if it equates to Class `prototype` -> yes
             b) Otherwise, No
-            c) Meaning: Object's prototype is matching with the class ptptotype protoypal chain
+            c) Meaning: Object's prototype is matching with the class ptototype protoypal chain
 */
 
 const myInstanceOf = (obj, Class) => {
