@@ -10,7 +10,8 @@
         TODO_NEED_REVISION: YES
         TODO_BENCHMARK: NO
         TODO_QUESTIONS:
-            a)
+            a) What DS can I use? - Set
+            b) What kind of approach I can take? - Two pointer problem
         TODO_TAKEAWAY:
             a)
         TODO_REMEMBER:

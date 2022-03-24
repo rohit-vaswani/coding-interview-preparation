@@ -177,11 +177,26 @@ To tackle the problem:
  - Can you take a simple example to solve the problem [support-negative-Array-index]
  - Can you think of the solution in the Plain English
 
--- Transformation problem, comments
+Approach to take:
+ - Two Pointer
+ - Sliding window
+ - Recursion
+
+DS or built-in or helper functions
+ - Promise.all
+
+Kind of the problem
+ - Recursive
+ - Complex
+ - String/Array problem
+ - non-comprehensive problem
+ - cases problem
+ - Logical problem
+
 -- Complex problem, DS
 -- Recursive problem, Recursion
 -- Cases problem, handle
--- String/Array problem, example [longest-substring-with-unique-characters]
+-- String/Array problem, example and passes [longest-substring-with-unique-characters]
 -- non-comprehensive, english translation
 
 
