@@ -6,19 +6,20 @@
         Company: ?
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
-        TODO_NEED_PRACTICE: YES
-        TODO_NEED_REVISION: NO
+        TODO_NEED_PRACTICE: NO
+        TODO_NEED_REVISION: YES
         TODO_BENCHMARK: NO
         TODO_QUESTIONS:
             a)
         TODO_TAKEAWAY:
             a) *** Always understand the problem, input, output clearly. Understand what each function is expected to do***
-            b) Defining a class with methods install, uninstall is a good step to solve the problem
+            b) Defining a class with methods install, uninstall is a good step to solve the BIG problem.
+            c)
         TODO_REMEMBER:
             a)
         TODO_SOLUTION:
             a) install: It will re-define 3 functions
-                - setInterval: Enqueue the task(fn, args) into custom queue
+                - setInterval: Enqueue the task(fn, args) into custom queue. [PS: This does not wait for the interval]
                 - clearInterval: Dequeue the task from the queue
                 - now: Override with the current time as 0
             b) tick
@@ -48,9 +49,7 @@ class FakeTimer {
     install() {
 
 
-        // Define setInterval
         window.setInterval = (fn, interval, args) => {
-
             const task = {fn, interval, args, time: this.currentTime, id: this.id}
             this.scheduleTask(task)
             return this.id++
@@ -74,9 +73,9 @@ class FakeTimer {
     tick() {
         while (this.myEventQueue.length) {
             let task = this.myEventQueue.pop()
-            this.currentTime = task.time
+            this.currentTime = task.time // TODO: Hack and jump to the recent time.
             this.scheduleTask(task)
-            task.fn(task.args)
+            task.fn(task.args)          // TODO: Invokes the function
         }
 
     }

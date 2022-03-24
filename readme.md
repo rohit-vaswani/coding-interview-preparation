@@ -198,8 +198,14 @@ DS or built-in or helper functions
    -- non-comprehensive, english translation
 
 
+-- Complete the flow using the comments
+-- Complete the flow using the helper functions
+-- Understand the problem using simpler/minimal example
+-- Understand the input & output of the problem very clearly
+-- Write passes to understand how the solution looks like in each phase
+
 ## Recursive approach
-1. Make yourself **fool** that a recusrive call will return the correct answer.
+1. Make yourself **fool** that a recursive call will return the correct answer.
 2. Think about your bases-cases of a recursive function and converge your non-base cases towards them.
 3. Think about how you aggregated your non-base cases.
 4. When you define the non-base conditions, you are actually performing DFS operation.
