@@ -21,6 +21,7 @@
         114. https://bigfrontend.dev/problem/implement-BigInt-multiplication
         99. https://bigfrontend.dev/problem/extract-all-anchor-elements-from-HTML-string
         98. https://bigfrontend.dev/problem/validate-an-ip-address [regex]
+        82.https://bigfrontend.dev/problem/find-available-meeting-slots [Not solved 100%]
 
 
 

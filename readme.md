@@ -190,9 +190,9 @@ DS or built-in or helper functions
 1. Understand the problem, example, input, output and expectations very clearly [create-a-fake-timer-setInterval]
 2. Tackle the problem
    -- Complex problem, DS.
-   -- Helper/Built-in functions to use.
+   -- Helper/Built-in functions to use. [merge-sorted-arrays]
    -- Responsibility & Input/Output of each function.
-   -- Recursive problem, Recursion
+   -- Recursive problem, Recursion [create-an-interval]
    -- Cases problem, handle
    -- String/Array problem, example and passes [longest-substring-with-unique-characters]
    -- non-comprehensive, english translation
@@ -201,7 +201,7 @@ DS or built-in or helper functions
 -- Complete the flow using the comments
 -- Complete the flow using the helper functions
 -- Understand the problem using simpler/minimal example
--- Understand the input & output of the problem very clearly
+-- Understand the input & output of the problem very clearly [create-an-interval]
 -- Write passes to understand how the solution looks like in each phase
 
 ## Recursive approach
