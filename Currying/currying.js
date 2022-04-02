@@ -2,8 +2,10 @@
 
     Source: https://theanubhav.com/2019/02/03/js-currying-in-interview/#what-is-currying
     TODO_TAKEAWAY:
-        1. valueOf: This method (non-prototype) is called when browser is expecting the primite value of an object.
+        1. valueOf: This method (non-prototype) is called when browser is expecting the primitive value of an object.
         2. Closures are the best way and when combined with Function.prototype it becomes really powerful. Use it.
+        3. even function has .length to understand how many arguments it accepts
+     TODO_NEED_REVISION: YES
 
 */
 
@@ -44,12 +46,32 @@ function sumFunc(a){
 
 //Pre-determined argument length
 function calculateSum(){
-	
+
 	let fn = this;
 	let len = fn.length;
 
 	return function func(){
 		return arguments.length >= len ? fn.apply(fn , arguments) : func.bind(func, ...arguments);
-    };  
+    };
 }
 // calculateSum.apply(sum)(1)(2)(3)
+
+
+const add = (...no) => {
+
+	let sum = no.reduce((sum, n) => sum + n, 0)
+
+	const func = (no2) => {
+		sum += no2
+		func.result = sum
+		return func
+	}
+
+	func.valueOf = () => {
+		return sum
+	}
+
+	return func
+}
+
+add(2)(3)(4)

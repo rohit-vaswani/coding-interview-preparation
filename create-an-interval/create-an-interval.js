@@ -14,7 +14,7 @@
         TODO_TAKEAWAY:
             a)
         TODO_REMEMBER:
-            a)
+            a) install, uninstall & constructor as TimerAPI for cleaner code
         TODO_SOLUTION:
             a) interval can be achieved using setTimeOut recursively
             b) onTimeOut, call itself
@@ -23,6 +23,30 @@
                 - Re-register timeout
                 - Update the timerMap with previous timerId as the key
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const timerMap = new Map()
@@ -62,3 +86,54 @@ const timerId = mySetInterval(fn, 100, 200)
 setTimeout(() => {
     myClearInterval(timerId)
 }, 2000)
+
+
+
+
+
+/*
+
+
+
+class CustomInterval {
+
+    constructor() {
+        this.setIntervalNative = window.setInterval
+        this.clearIntervalNative = window.clearInterval
+    }
+
+
+    install() {
+
+        let count = 0
+        let delay = 0
+        let map = new Map()
+
+        window.setInterval = (fn, interval, period, ...args) => {
+
+            const onTimeOut = () => {
+                count && fn(...args)
+                delay = interval + (period * count++)
+                const newTimerId = setTimeout(onTimeOut, delay)
+                map.set(timerId, newTimerId)
+                return timerId
+            }
+
+            const timerId = onTimeOut()
+            map.set(timerId, timerId)
+            return timerId
+        }
+
+
+        window.clearInterval = (timerId) => {
+            clearInterval(map.get(timerId))
+        }
+    }
+
+    uninstall() {
+        window.setInterval = this.setIntervalNative
+        window.clearInterval = this.clearIntervalNative()
+    }
+}
+
+ */

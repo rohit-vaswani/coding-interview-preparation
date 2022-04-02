@@ -19,7 +19,7 @@ function getDepth(arr , parentIndex){
     //Base condition
     if(parentIndex>len || !arr[parentIndex]){return 0};
 
-    //Recurstion and Aggregation
+    //Recursion and Aggregation
     return 1 + Math.max(
         getDepth(arr , leftChildIndex),
         getDepth(arr , rightChildIndex)

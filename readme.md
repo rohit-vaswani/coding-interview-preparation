@@ -52,10 +52,10 @@
 
  ## Dynamic programmming
  1. Rod cutting*
-    a) Recusrive call in a for loop
+    a) Recursive call in a for loop
     b) Aggregation: MAX
  2. Minimum Distance
-    a) Recusrive call after mention of all the base conditions
+    a) Recursive call after mention of all the base conditions
     b) Aggregation: Min
  3. Cycles in a directed graph
     a) Recursive call while exploring the adj. vertices of a node
@@ -69,11 +69,6 @@
  2. For loop over unit sized in rod-cutting
 
 
-## Golden rule
-1. If you think it as a recurring problem, see if you can find the base conditions and non-base conditions. (rod-cutting / minpath)
-2. Otherwise, think about the logic and translate it to a high-level logic using helper functions and api-methods
-
-
 ## You should do this
 1. Be a story teller -  (addADigit)
     a) Talk about the bad approach first. Why you think that this is not a optimized solution
@@ -82,31 +77,44 @@
     d) Talk loudly about the edge cases.
     
 
-## Sequences of discussion while in an interview
-1. Seek Clarification: Ask relevant questions and resolve ambiguity if any. Ask and clarify edge cases.
-2. High-level discussion: 
-    a) Talk about multiple approaches.
+## Sequences of discussion while in an interview [addADigit, parkingLot]
+1. Understand Question better: Seek Clarification / ask ambiguity / communicate assumptions / discuss edge cases
+   a) What if the array is Empty?
+   b) *Can I assume* that all the values are numeric?
+   c) *Can you please confirm* if all the values will be single digit number (0-9)?
+2. Discuss the approaches / examples / cases highly
+    a) Talk about multiple approaches/methodology.
     b) Talk about why this approach is not better.
-    c) Talk about how you can optimize it. (Iterative/Recusrive/Dynamic/Sliding/Traversal)
-    b) Communicate flow and do a dry run if required.
+    c) Talk about how you can optimize it. (Iterative/Recursive/Dynamic/Sliding/Traversal)
+    d) Communicate flow and do a dry run if required
+    e) *I am thinking to take* a recursive_approach wherein I will do ...
+    f) *Can I say for an input X*, the output should be Y.
+    g) *If you are comfortable with the approach*, we can move to the implementation part?
+    h) Let's go through another example to understand it even better.
+    i) Can I take a simpler example to better example to better understand
+3. Pseudo code
+    a) Write the pseudo code
+    b) Do the dry run: i) Write passes of the iteration ii) Talk about the base/non-base conditions
+    c) Write the 
+        i) interface methods
+        ii) Helper functions
+        iii) Cases
+        iv) Steps
+4. Implementation
+    a) Write the code
+
 
 ## Questions to ask (Refer to Best videos section below)
- # [Question reiterate -> Clarification -> Approach -> Best Approach -> Dry Run -> Implementation]
-1. If you think that Recursive appproach is an optimal solution, should I start coding?
-2. What if the array is Empty?
-3. *Can I assume* that all the values are numeric?
-4. Can you please confirm if all the values will be single digit number (0-9)?
-5. *If you are comfortable with the approach*, we can move to the implementation part?
-6. Let's go through another example to understand it even better.
+# [Question reiterate -> Clarification -> Approach -> Best Approach -> Dry Run -> Implementation]
+1. If you think that Recursive approach is an optimal solution, should I start coding?
+
+
 7. I am making a few assumptions here, let me just clarify that to you.
-8. *I am thinking to take* a recursive_approach wherein I will do ...   (Talk about the approach name: Two pointer / Dynamic programming / Recusrive / Sliding window problem)
+8.   (Talk about the approach name: Two pointer / Dynamic programming / Recursive / Sliding window problem)
 9. Don't stall. It's Okay to ask questions/knowledge.
-10. Can I say for an input X, the output should be Y.
 
 
-# Key to success: (https://www.youtube.com/watch?v=kvEZVsHmA34&feature=youtu.be)
-1. Communication is a key: Think loud and communicate things before you jump to the implementation
-2. Creativity is a key: Think about the multiple approaches even if they are un-optimized.
+
 
 ## Know this standards
 1. To find the first/last k-elements, you should use bucket sort? No need to sort an array with n*logn. https://www.youtube.com/watch?v=EYFcQRwcqk0
@@ -115,9 +123,17 @@
 4. Bucket sort should be used to perform the lookup in an efficient manner.
 
 
-## Approaches/Algorithms
+## Approaches/Algorithms/Methodology
 1. Tortoise-and-rabbit: cycleInAnArray
 
+## Tackle an unknown problem with example [cycleInAnArray]
+1. Positive example
+2. Negative example
+3. Simple example
+
+
+## For a Recursive problem, can you recursively define the solution
+[decodeStr]
 
 
 ## Best videos that illustrate how you should go about a problem
@@ -125,32 +141,15 @@
 2. [add-A-Digit](https://www.youtube.com/watch?v=7IbxzIyRMrA)
 3. [Pair-sum](https://www.youtube.com/watch?v=XKu_SEDAykw)
 4. [Cycle-in-an-array](https://www.youtube.com/watch?v=VX2oZkDJeGA&t=20s)
+5. [parkingLot](https://www.youtube.com/watch?v=DSGsa0pu8-k)
 
 
 ## TODO_PENDING:
 https://www.youtube.com/watch?v=FO7VXDfS8Gk&t=3s
 
 
-## LEARNING (FROM MISTAKES)
-
-### Google
-1. Finalize the approach first even before you start coding. Don't jump to the implementation directly.
-2. I failed to read and understand the problem statement.
-3. **You should always be clear with the input and output of the given/written methods.** (google.js)
-4. Take help if you're stuck. It's Okay.
-4. If you are stuck, just think loud.
-5. Communicate even if you think that it is not an optimal solution. Interviewer is not an enemy.
-6. **Make use of helper functions and complete the flow FIRST**
-7. What should come first
-    a) A logical problem - **Make use of helper functions and complete the flow FIRST**
-    b) Recursive problem - **Think, understand and define the base cases FIRST. Aggregate and Converge your non-base case towards base case**
-    c) A Complex problem - **Declare Interfaces and API methods first. Implement them later**
-
-
-
 # Golden rules for Problem solving
 1. Be clear with the input and output of the given/written  methods.
-2. Complete the flow first with the help of helper functions and interface methods.
 3. To better approach the problem
  - For Iterative problems, write passes of the execution. []
  - For Manipulation problems, Either put comments against each step for better visualisation. []
@@ -169,7 +168,7 @@ https://www.youtube.com/watch?v=FO7VXDfS8Gk&t=3s
  - Identify Steps                                                                       [merge-identical-API-calls]
  - For transformation problem, Output intermediate solution to visualise the problems
  - To better visualise the problem, always take a simple example to better understand.
- - 
+
 
 To tackle the problem:
  - Can you identify the steps/cases to solve the problem [support-negative-Array-index]
@@ -191,22 +190,23 @@ DS or built-in or helper functions
 2. Tackle the problem
    -- Complex problem, DS.
    -- Helper/Built-in functions to use. [merge-sorted-arrays]
-   -- Responsibility & Input/Output of each function.
+   -- Responsibility & Input/Output of each function. [create-a-fake-timer-setInterval, parkingLot]
    -- Recursive problem, Recursion [create-an-interval]
-   -- Cases problem, handle
-   -- String/Array problem, example and passes [longest-substring-with-unique-characters]
-   -- non-comprehensive, english translation
+   -- Cases problem, handle [compress-a-string]
+   -- String/Array problem, example and passes [longest-substring-with-unique-characters, Count-palindromic-substrings]
+   -- non-comprehensive, english translation [countRangeSum]
+   
+# Still Unable to solve the problem
+-- Understand the problem using simpler/minimal/positive/negative example
+-- Write how each pass will look like
+-- Translate that problem into the english
+-- Write recursion steps in each iteration
 
+## Recursive approach [decodeStr]
+1. Confirm yourself the return type of the function.
+2. Always take simple example to understand the problem/solution better.   
+3. Identify base conditions. Handle them first.
+4. Handle non-base condition, one-by-one. Make yourself fool that recursive function will return the proper answer.
+5. Think about the aggregation operation to converge to the answer.
 
--- Complete the flow using the comments
--- Complete the flow using the helper functions
--- Understand the problem using simpler/minimal example
--- Understand the input & output of the problem very clearly [create-an-interval]
--- Write passes to understand how the solution looks like in each phase
-
-## Recursive approach
-1. Make yourself **fool** that a recursive call will return the correct answer.
-2. Think about your bases-cases of a recursive function and converge your non-base cases towards them.
-3. Think about how you aggregated your non-base cases.
-4. When you define the non-base conditions, you are actually performing DFS operation.
 

@@ -19,41 +19,36 @@
             a)
 */
 
-const compress = (str = '') => {
+const compress = (str) => {
 
 
-    let startIndex = 0
-    let endIndex = 0
-    let currentChar = ''
-    let lastChar = str[0]
     let answer = ''
+    let startIndex = 0
+    let currentValue = ''
+    let len = str.length
+    let i
 
-    for (let i = 1; i <str.length; i++) {
-
-        currentChar = str[i]
-
-
-        let isLastIndex = i == str.length - 1
-        if (currentChar === lastChar) {
-            endIndex = i
-        } else {
+    for (i = 0; i < len; i++) {
+        currentValue = str[i]
 
 
-            answer += `${lastChar}${endIndex - startIndex + 1}`
-            startIndex = i
-            endIndex = i
-            lastChar = currentChar
-
+        // Same Char
+        if(currentValue === str[startIndex]) {
+            continue
         }
 
-        if(isLastIndex) {
-            answer += `${lastChar}${endIndex - startIndex + 1}`
-        }
+        // Different Char
+        answer += `${str[startIndex]}${i - startIndex}`
+        startIndex = i
 
     }
 
+    // Last Char
+    answer += `${str[startIndex]}${i - startIndex}`
 
     return answer
+
 }
+
 
 console.log('ANSWER:', compress('aaabbaab'))

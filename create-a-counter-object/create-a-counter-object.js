@@ -9,30 +9,53 @@
         TODO_NEED_PRACTICE: NO
         TODO_TAKEAWAY:
             a) setter and getter function cannot be written using arrow functions
+            b) const obj = {get count(){}, set count() {}}
+            c) const Object.defineProperty(obj, "count", {get(){}, set(_){}})
         TODO_REMEMBER:
             a)
         TODO_SOLUTION:
             a)
 */
 
+
 const createCounter = () => {
 
 
-    let v = 0
-
-    const counter = {
-        set count(val) {
-            return v
+    let val = 0
+    const countObj = {}
+    Object.defineProperty(countObj, "count", {
+        get() {
+            return val++
         },
-        get count() {
-            return v++
+        set(_val){
+            return val
         }
+    })
 
-    }
+    return countObj
 
-    return counter
+
 
 }
+
+// const createCounter = () => {
+//
+//
+//     let v = 0
+//
+//     const counter = {
+//         set count(val) {
+//             return v
+//         },
+//         get count() {
+//             return v++
+//         }
+//
+//     }
+//
+//     return counter
+//
+// }
 
 
 const counter = createCounter()

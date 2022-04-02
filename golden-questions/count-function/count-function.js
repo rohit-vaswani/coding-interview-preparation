@@ -9,6 +9,8 @@
         TODO_REMEMBER:
             a) A function is an object, and can have properties attached to it.
             b) IFFY is created to create the state and keep track of the invocations.
+            c) const count = () => {}; count.__proto__.reset is valid
+            d) function Count() {}; const countIns = new Count(); Count.prototype.reset is valid
         TODO_NEED_PRACTICE: NO
 */
 

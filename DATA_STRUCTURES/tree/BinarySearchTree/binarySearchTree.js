@@ -25,19 +25,19 @@ class BinarySearchTree{
         while(true){
 
             if(value>current.value){
-                
+
                 if(!current.right){
                     current.right = node;
                     break;
                 }
                 current = current.right;
-                
+
             }
 
             if(value<current.value){
                 if(!current.left){
                     current.left = node;
-                    break;                    
+                    break;
                 }
                 current = current.left;
             }
@@ -50,7 +50,7 @@ class BinarySearchTree{
 
         let { root: current } = this;
         let isPresent = true;
-        
+
         while(true){
 
             if(!current){
@@ -92,4 +92,11 @@ bTree.insert(11);
 bTree.insert(14);
 
 console.log(bTree.search(11));
+
+
+/*
+
+
+
+ */
 

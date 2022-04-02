@@ -13,7 +13,7 @@
         TODO_TAKEAWAY:
             a)
         TODO_REMEMBER:
-            a) Using setTimeOut, you ensured all the actions are queued before the exection starts
+            a) Using setTimeOut, you ensured all the actions are queued before the execution starts
         TODO_SOLUTION:
             a) Define actionTypes and actionHandlers against case.
             b) Queue the actions into normal and urgent queue.
@@ -36,6 +36,7 @@ class LazyMan {
         this.urgentTask = []
         this.greet(name)
 
+        // TODO_REMEMBER: TO ensure the chained functions are called before we execute the tasks/urgentTasks
         setTimeout(() => {
             this.handleAction()
         }, 0)
