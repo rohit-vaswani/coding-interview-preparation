@@ -78,11 +78,11 @@
     
 
 ## Sequences of discussion while in an interview [addADigit, parkingLot]
-1. Understand Question better: Seek Clarification / ask ambiguity / communicate assumptions / discuss edge cases
+1. Discuss problem: Seek Clarification / ask ambiguity / communicate assumptions / discuss edge cases
    a) What if the array is Empty?
    b) *Can I assume* that all the values are numeric?
    c) *Can you please confirm* if all the values will be single digit number (0-9)?
-2. Discuss the approaches / examples / cases highly
+2. Discuss solution/examples: approaches / examples / cases highly
     a) Talk about multiple approaches/methodology.
     b) Talk about why this approach is not better.
     c) Talk about how you can optimize it. (Iterative/Recursive/Dynamic/Sliding/Traversal)
@@ -92,7 +92,7 @@
     g) *If you are comfortable with the approach*, we can move to the implementation part?
     h) Let's go through another example to understand it even better.
     i) Can I take a simpler example to better example to better understand
-3. Pseudo code
+3. Discuss Pseudo code
     a) Write the pseudo code
     b) Do the dry run: i) Write passes of the iteration ii) Talk about the base/non-base conditions
     c) Write the 
@@ -100,7 +100,7 @@
         ii) Helper functions
         iii) Cases
         iv) Steps
-4. Implementation
+4. Write Implementation
     a) Write the code
 
 
