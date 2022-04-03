@@ -24,8 +24,7 @@ let memo = new Map()
 
 const fib = (no) => {
 
-    if(no === 0) { return 0}
-    if(no === 1) { return 1}
+    if(no <=1) { return no}
 
     if(memo.has(no)) {
         return memo.get(no)

@@ -32,6 +32,9 @@
         1. codeJamonCipher
         2. dijikstraAlgo
         3. directedCycliGraph
+        4. FindInversions
+        5. imageFile
+
 
 
  */

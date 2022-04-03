@@ -19,8 +19,12 @@
             b) API of stack: push, pop, peek, isEmpty, size
         TODO_SOLUTION:
             a) Maintain two queue
-            b) During push of the stack, dequeue q1 to d2. enqueue elem to q1. dequeue q2 to a1.
+            b) During push of the stack, dequeue q1 to q2. enqueue elem to q1. dequeue q2 to a1.
             c) During pop, dequeue q1
+
+
+    q1=[4,3,2,1]
+    q2=[]
 
 */
 

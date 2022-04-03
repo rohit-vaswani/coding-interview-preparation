@@ -8,37 +8,28 @@
         TODO_STANDARD_PROBLEM: NO
         TODO_NEED_PRACTICE: NO
         TODO_NEED_REVISION: NO
-        TODO_BENCHMARK: NO
+        TODO_BENCHMARK: YES
         TODO_QUESTIONS:
             a)
         TODO_TAKEAWAY:
             a)
         TODO_REMEMBER:
             a) Binary number from decimal number can be created using no/2 & no%2 iteratively
+            b) Refer below to understand the carry forward to the next iteration
         TODO_SOLUTION:
             a)
 */
 
 
-const getBinary = (no) => {
+// TODO_REMEMBER: How you carry forward the partial answer to the next recursion.
+const countOne = (no, count = 0) => {
 
-    let num = no
-    let binaryNo = ""
-
-    while (num !== 0) {
-        binaryNo += num % 2
-        num = Math.floor(num / 2)
+    if (no === 0) {
+        return count
     }
 
-    return binaryNo
-
+    return countOne(Math.floor(no / 2), no % 2 === 1 ? ++count : count)
 }
 
-const countOne = (no) => {
-
-    const binary = getBinary(no)
-    return [...binary].filter(no => no === "1").length
-
-}
 
 console.log(countOne(257799))

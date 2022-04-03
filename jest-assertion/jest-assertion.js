@@ -1,19 +1,20 @@
 /*
-<<<<<<< HEAD
     Source: https://bigfrontend.dev/problem/jest-assertion (161_BFE)
-=======
-    Source: https://bigfrontend.dev/problem/jest-assertion
->>>>>>> 93be01396548bd4f98d63e2817ad59cb8b7225aa
     Difficulty: TODO_DI_MEDIUM
     Algorithm: ?
-    Company: ? TODO_CO_AMAZON | TODO_CO_FACEBOOK | TODO_CO_UBER | TODO_CO_GOOGLE
-    DataStructure: ? TODO_DS_STACK | TODO_DS_GRAPH | TODO_DS_MAP | TODO_DS_QUEUE
+    Company: ?
+    DataStructure: ?
     Solution explained: https://www.youtube.com/watch?v=Rs6ox8biWHE
     TODO_TAKEAWAY:
         a) Function that behave like an object, with get function.
-        b) Always think first from input and output
-        c) Take advantage of closure to access the enclosed data.
+        b) const obj = {
+            get a() {return 2},
+            b: 3
+        }
+        obj.a ==> 2; obj.b ==> 3
+
 */
+
 
 
 const myExpect = (input) => {

@@ -1,10 +1,31 @@
 /*
-
-    Source: https://www.interviewbit.com/problems/edit-distance/
-    Asked: TODO_CO_GOOGLE , TODO_CO_LINKEDIN , TODO_CO_MICROSOFT , TODO_CO_AMAZON
-    Approach: Dynamic programming / Recursive solution
-    Difficulty: TODO_DI_HARD
-    Solve: https://www.geeksforgeeks.org/edit-distance-dp-5/
+        Source: https://www.interviewbit.com/problems/edit-distance/
+        Solution link: https://www.geeksforgeeks.org/edit-distance-dp-5/
+        Difficulty: TODO_DI_HARD
+        Algorithm: Dynamic programming / Recursive solution
+        Company:  TODO_CO_GOOGLE , TODO_CO_LINKEDIN , TODO_CO_MICROSOFT , TODO_CO_AMAZON
+        DataStructure: ?
+        TODO_STANDARD_PROBLEM: NO
+        TODO_NEED_PRACTICE: NO
+        TODO_NEED_REVISION: NO
+        TODO_BENCHMARK: NO
+        TODO_QUESTIONS:
+            a)
+        TODO_TAKEAWAY:
+            a)
+        TODO_REMEMBER:
+            a)
+        TODO_SOLUTION:
+            a) Example: 'abd' -> 'abc'
+            b) Base conditions
+                - When char is same
+                - When first string is exhausted
+                - When second string is exhausted
+            c) Non-base condition
+                - When char is different
+                    > Insert
+                    > Delete
+                    > Replace
 */
 
 

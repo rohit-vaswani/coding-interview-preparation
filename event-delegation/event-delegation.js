@@ -1,5 +1,5 @@
 /*
-        Source: https://bigfrontend.dev/problem/event-delegation
+        Source: https://bigfrontend.dev/problem/event-delegation (117_BFE)
         Solution link: https://bigfrontend.dev/problem/event-delegation/discuss/9066
         Difficulty: TODO_DI_MEDIUM
         Algorithm: ?
@@ -7,7 +7,7 @@
         DataStructure: ?
         TODO_STANDARD_PROBLEM: NO
         TODO_NEED_PRACTICE: NO
-        TODO_NEED_REVISION: NO
+        TODO_NEED_REVISION: YES
         TODO_BENCHMARK: NO
         TODO_QUESTIONS:
             a)
@@ -16,12 +16,24 @@
         TODO_REMEMBER:
             a) Callback of an event gives event object containing {target, parentElement, tagName}
             b) Stop propagation and stopImmediate propagation is registered on the event object.
+            c) addEventListener and removeEventListener are used to register/un-register event
+            d) Window.addEventListener('DOMConentLoaded', () => {})
         TODO_SOLUTION:
             a) Register an event on the rootNode.
             b) Maintain the map of key as rootNode and eventhandlers as value of the Map.
             c) When an event happens, iterate over the event target and it's parentElement. process all the registered event handlers whose predicate is true.
 
 */
+
+
+
+
+
+
+
+
+
+
 
 
 let eventHandlersMap = new Map()

@@ -17,7 +17,7 @@
             a) Object.create() creates a new object using the prototype of the object.
             b) More about prototype
                 - Every object in JavaScript has a built-in property, which is called its prototype
-                - Can be accessed using Object.getPrototypeOf(obj) OR obj.__proto__
+                - Can be accessed using Object.getPrototypeOf(obj) OR obj.__proto__ Or Object.prototype
                 -  If you try to access an property, and if it is not found in the object itself, then the prototype object is searched for that property.
                 - The prototype is itself an object, so the prototype will have its own prototype, making what's called a `prototype chain`
                 - The chain ends when we reach a prototype that has null for its own prototype.

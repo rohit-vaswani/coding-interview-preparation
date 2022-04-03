@@ -32,7 +32,6 @@ const findMeetingSlots = (schedules) => {
         })
     })
 
-
     const ans = []
     let count = 0
     let startIndex = 0

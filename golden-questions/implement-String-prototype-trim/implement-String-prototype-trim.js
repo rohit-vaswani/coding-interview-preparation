@@ -11,8 +11,10 @@
         TODO_BENCHMARK: NO
         TODO_QUESTIONS:
             a)
-        TODO_TAKEAWAY:
-            a)
+        TODO_TAKEAWAY: [THREE QUESTIONS TO ASK YOURSELF]
+            a) AT THE END OF THE DAY, you need two indices to solve the problem
+            b) ALWAYS KEEP THE MINIMAL EXAMPLE IN FRONT OF YOU
+            c) IS THIS A RECURSIVE PROBLEM
         TODO_REMEMBER:
             a)
         TODO_SOLUTION:
@@ -24,29 +26,28 @@
 // TODO_REMEMBER
 const WHITESPACES = [" ", "", "\s", "\t", "\n", "\u3000"];
 
+
+
+
+
 const trim = (str = '') => {
 
 
-    let startIndex = 0
-    let endIndex = str.length
-    let isCharStarted = false
-    let arr = [...str]
-    arr.forEach((char, index) => {
+    let firstCharIndex = str.length - 1
+    let lastCharIndex = 0
+    const strArr = [...str]
+
+    strArr.forEach( (char, index) => {
 
 
-        if(char === ' ' && !isCharStarted) {
-            startIndex = index
+        if(char !== " ") {
+            firstCharIndex = Math.min(firstCharIndex, index)
+            lastCharIndex = Math.max(lastCharIndex, index)
         }
-
-        if(char !== ' ') {
-            isCharStarted = true
-            endIndex = index
-        }
-
     })
 
-    return str.slice(startIndex + 1, endIndex + 1)
+    return str.slice(firstCharIndex, lastCharIndex + 1)
 
 }
 
-console.log('_.' + trim('  A    ') + '._')
+console.log('_.' + trim('     ') + '._')

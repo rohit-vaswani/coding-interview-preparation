@@ -11,6 +11,7 @@
             a)
         TODO_REMEMBER:
             a) if initialValue is not provided to reduce, it consider first value as it's initial value (Skip one iteration)
+            b) .reduce((acc, value, index, arr) => {}, initialValue)
         TODO_SOLUTION:
             a)
 */

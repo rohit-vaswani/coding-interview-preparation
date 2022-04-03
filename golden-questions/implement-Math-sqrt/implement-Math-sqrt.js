@@ -13,9 +13,12 @@
             a)
         TODO_TAKEAWAY:
             a) Keep the ref example in my mind
+            b) THE END GOAL IS TO FIND A NUMBER WHOSE MULTIPLE IS the value. Meaning, optimal way to IDENTIFY that NO.
+            c) ALWAYS KEEP THE EXAMPLE IN FRONT OF YOU. AND MAKE A FEW OBSERVATIONS to CONVERGE TOWARDS THE ANSWER
         TODO_REMEMBER:
             a) Remember the solution
-            b) Only Object.is(NaN, NaN) is true. Otherwise NaN == NaN is false
+            b) Only Object.is(NaN, NaN) is true. Otherwise NaN === NaN is false. Else isNaN(NaN) is true
+            c) IF THERE ARE A FEW SPECIAL CASES, handle them separately. [SEE BELOW]
         TODO_SOLUTION:
             a) Define the bounds and narrow down to the answer through binary search almost
             b) start=1 and end=x/2
@@ -43,7 +46,6 @@ function mySqrt(no) {
 
     while (start <= end) {
         let mid = start + Math.floor((end - start)/2)
-        console.log(mid)
         let sqValue = mid * mid
 
         if (sqValue === no) {

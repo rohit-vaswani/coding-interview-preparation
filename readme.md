@@ -83,6 +83,7 @@
    b) *Can I assume* that all the values are numeric?
    c) *Can you please confirm* if all the values will be single digit number (0-9)?
 2. Discuss solution/examples: approaches / examples / cases highly
+    - *Discuss cases/steps/base-conditions/helper-methods/examples/data-models(parkingLot)/data-structures/methodology/algorithm/Iteration/English statement
     a) Talk about multiple approaches/methodology.
     b) Talk about why this approach is not better.
     c) Talk about how you can optimize it. (Iterative/Recursive/Dynamic/Sliding/Traversal)
@@ -92,6 +93,7 @@
     g) *If you are comfortable with the approach*, we can move to the implementation part?
     h) Let's go through another example to understand it even better.
     i) Can I take a simpler example to better example to better understand
+    j) THINK THIS WAY, WHAT YOU NEED AT THE END OF THE DAY TO SOLVE THIS PROBLEM [implement-Math-sqrt, implement-partial, implement-String-prototype-trim]  
 3. Discuss Pseudo code
     a) Write the pseudo code
     b) Do the dry run: i) Write passes of the iteration ii) Talk about the base/non-base conditions
@@ -100,6 +102,7 @@
         ii) Helper functions
         iii) Cases
         iv) Steps
+   d) ALWAYS KEEP THE MINIMAL EXAMPLE IN FRONT OF YOU, while writing the code [implement-classnames]
 4. Write Implementation
     a) Write the code
 
@@ -121,6 +124,7 @@
 2. Heapify is the BEST solution to find the MAX/MIN and to do in-place sorting in n*log(n)
 3. If you have to break the loop or continue the loop, never prefer .reduce
 4. Bucket sort should be used to perform the lookup in an efficient manner.
+5. In most cases,O(n*logn)is achieved by using a tree structure. Divide and conquer may be the methodology which comes to our mind first
 
 
 ## Approaches/Algorithms/Methodology
@@ -189,22 +193,29 @@ DS or built-in or helper functions
 1. Understand the problem, example, input, output and expectations very clearly [create-a-fake-timer-setInterval]
 2. Tackle the problem
    -- Complex problem, DS.
-   -- Helper/Built-in functions to use. [merge-sorted-arrays]
+   -- Helper/Built-in functions to use. [merge-sorted-arrays, largestNumber, LargestPalindrome]
    -- Responsibility & Input/Output of each function. [create-a-fake-timer-setInterval, parkingLot]
-   -- Recursive problem, Recursion [create-an-interval]
+   -- Recursive problem, Recursion [create-an-interval, LargestPalindrome]
    -- Cases problem, handle [compress-a-string]
    -- String/Array problem, example and passes [longest-substring-with-unique-characters, Count-palindromic-substrings]
-   -- non-comprehensive, english translation [countRangeSum]
+   -- non-comprehensive, english translation [countRangeSum, event-delegation]
+   -- Steps [event-delegation, LargestPalindrome]
    
 # Still Unable to solve the problem
--- Understand the problem using simpler/minimal/positive/negative example
--- Write how each pass will look like
--- Translate that problem into the english
--- Write recursion steps in each iteration
+-- Understand the problem's input and output
+-- Understand if this is a recursive problem or not? (below section)
+-- Understand the problem using simpler/minimal/positive/negative example [find-median-of-2-sorted-array]
+-- Write how each pass will look like [find-median-of-2-sorted-array]
+-- understand the flow of the problem in plain english [find-median-of-2-sorted-array, LargestPalindrome]
+-- Understand what exactly you need to achieve to solve this problem. [LargestPalindrome]
+
+## Is this is a recursive problem or iterative problem
+-- Many possible cases at each point of the time? [editDistance, coinChange, maxConnectedBoxes]
+-- is this a repeating problem?
 
 ## Recursive approach [decodeStr]
-1. Confirm yourself the return type of the function.
-2. Always take simple example to understand the problem/solution better.   
+1. Confirm yourself the return type / output of the function*
+2. Always take minimal example to understand the problem/solution better.   
 3. Identify base conditions. Handle them first.
 4. Handle non-base condition, one-by-one. Make yourself fool that recursive function will return the proper answer.
 5. Think about the aggregation operation to converge to the answer.

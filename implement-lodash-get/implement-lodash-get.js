@@ -1,7 +1,7 @@
 /*
         Source: https://bigfrontend.dev/problem/implement-lodash-get [85_BFE]
         Solution link: ?
-        Difficulty: TODO_DI_EASY | TODO_DI_MEDIUM | TODO_DI_HARD
+        Difficulty: TODO_DI_MEDIUM
         Algorithm: ?
         Company: ?
         DataStructure: ?
@@ -16,47 +16,49 @@
         TODO_TAKEAWAY:
             a)
         TODO_REMEMBER:
-            a)
+            a) isNaN to check whether the value is isNaN or not.
+            b) const a = [1,2,3] --> a["1"] is 2 --> a[1] -->  2.
+            c) Meaning, arr/obj can be accessed using key as string/number
         TODO_SOLUTION:
             a)
 */
 
 
-const getStandardPath = (path) => {
+const obj = {
+    a: {
+        b: {
+            c: [1, 2, 3]
+        }
+    }
+}
 
-    path = typeof path === "string" ? path.replaceAll('[', '.').replaceAll(']', '') : path
-    path = Array.isArray(path) ? path : path.split('.')
+
+const getStandardPath = (path = '') => {
+
+    if (Array.isArray(path)) {
+        return path
+    }
+
+    path = path.replaceAll('[', '.').replaceAll(']', '')
+    path = path.split('.')
 
     return path
 
 }
 
+
 const get = (obj, path, defaultValue) => {
-
     const standardPath = getStandardPath(path)
-
-    for (let i = 0; i < standardPath.length; i++) {
-        let key = isNaN(+standardPath[i]) ? standardPath[i] : +standardPath[i]
-
-
-        if( typeof obj === "object" && (obj[key] !== undefined || Array.isArray(obj))) {
-            obj = obj[key]
-        } else if(defaultValue) {
+    let value = obj
+    let i = 0
+    while (i < standardPath.length) {
+        if (value === undefined) {
             return defaultValue
         }
-
+        value = value[standardPath[i++]]
     }
 
-    return obj
-
-}
-
-const obj = {
-    a: {
-        b: {
-            c: [1,2,3]
-        }
-    }
+    return value ?? defaultValue
 }
 
 console.log(get(obj, 'a.b.c')) // [1,2,3]

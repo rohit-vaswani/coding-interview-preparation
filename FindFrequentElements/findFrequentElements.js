@@ -7,28 +7,27 @@
         Data Structure: HashMap and Array
 
 
- */
+*/
 
-const findFreqElements = (nums = [], k) => {
 
-    // 1. Build Hash map of "Element -> Its frequency"
-    const freqMap = nums.reduce((map, no) => {
-        map[no] = map[no] || 0
-        map[no]++
+const findFreqElements = (arr = [], freq) => {
+
+
+    const freqMap = arr.reduce((map, value) => {
+        const freq = map.get(value) || 0
+        map.set(value, freq + 1)
         return map
-    }, {})
+    }, new Map())
 
+    let freqArr = []
+    for(let [value, freq] of freqMap.entries()) {
+        freqArr[freq] = freqArr[freq] || []
+        freqArr[freq].push(value)
+    }
 
-    // Build array of key representing frequency of its element
-    const freqArray = Object.keys(freqMap).reduce((arr, no) => {
-        const freq = freqMap[no]
-        arr[freq] = arr[freq] || []
-        arr[freq].push(no)
-        return arr
-    }, []).filter(elem => !!elem)
+    freqArr = freqArr.filter(val => !!val)
 
-    // Create output array
-    return freqArray.flat().slice(-k)
+    return freqArr.flat(Infinity).slice(-freq - 1)
 }
 
 

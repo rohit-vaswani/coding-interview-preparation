@@ -1,6 +1,9 @@
 /*
     Source: https://docs.google.com/document/d/1vS3Pq866YBwmCdAp-YVwVUXaUuBBeUmJB5Ks0BV8JdU/edit#
     Type: 2nd set interview question
+    TODO_TAKEAWAY:
+        1. Tree has only root node, hence representation can be object.
+        2. Folder has array of rootFolders, hence array representation
 
 */
 
@@ -40,7 +43,7 @@ const folderStructure = [//TODO_TAKEAWAY: For recursive, we should be able to de
     {
         "name": "Binary Search"
     }
-    
+
 ]
 
 function print(name , level){

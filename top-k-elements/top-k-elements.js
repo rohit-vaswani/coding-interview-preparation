@@ -26,88 +26,83 @@
 
 class MaxHeap {
 
+
     constructor() {
         this.arr = []
     }
 
-    getMax() {
-        return this.arr[0]
+
+    swap(i, j) {
+        [this.arr[i], this.arr[j]] = [this.arr[j], this.arr[i]]
     }
 
-    _swap(ind1, ind2) {
-        [this.arr[ind1], this.arr[ind2]] = [this.arr[ind2], this.arr[ind1]]
-    }
-
-    // heapifyUp
-    push(val) {
-
+    insert(val) {
         this.arr.push(val)
 
-        let current = this.arr.length - 1
-        while (current > 0) {
-            let parent = Math.floor((current - 1) / 2)
-            if (this.arr[parent] < this.arr[current]) {
-                this._swap(parent, current)
-            }
-            current = parent
+        if (this.arr.length === 1) {
+            return
         }
 
-    }
+        let i = this.arr.length - 1
 
-    // heapifyDown
-    pop() {
-
-        let max = this.arr[0]
-        this._swap(0, this.arr.length - 1)
-        this.arr.splice(this.arr.length - 1, 1)
-        let len = this.arr.length
-        let parent = 0
-
-        while (true) {
-
-            let leftChild = (2 * parent) + 1
-            let rightChild = leftChild + 1
-            let swapIndex = -1
-
-            // Swap parent with left if left is more than parent
-            if (leftChild < len && this.arr[leftChild] > this.arr[parent]) {
-                swapIndex = leftChild
-            }
-
-
-            // Swap right with parent if a) Right is greater than parent b) Right is greater than left
-            if (rightChild < len && (
-                (this.arr[rightChild] > this.arr[parent] && swapIndex === -1) ||
-                (this.arr[rightChild] > this.arr[leftChild]) && swapIndex !== -1)
-            ) {
-                swapIndex = rightChild
-            }
-
-            // Perform actual swap
-            if (swapIndex !== -1) {
-                this._swap(swapIndex, parent)
-                parent = swapIndex
+        while (i > 0) {
+            let parentIndex = Math.floor((i - 1) / 2)
+            if (this.arr[parentIndex] <= this.arr[i]) {
+                this.swap(i, parentIndex)
+                i = parentIndex
             } else {
                 break
             }
-
-
         }
+    }
+
+
+    pop() {
+
+        const max = this.arr[0]
+        this.swap(0, this.arr.length - 1)
+        this.arr.length--
+
+        let currentIndex = 0
+
+        while (true) {
+
+
+            debugger
+            let swapIndex = -1
+            let leftIndex = (2 * currentIndex) + 1
+            let rightIndex = leftIndex + 1
+            let leftValue = this.arr[leftIndex] ?? -Infinity
+            let rightValue = this.arr[rightIndex] ?? -Infinity
+
+            if (rightValue > leftValue && rightValue >= this.arr[currentIndex] && rightIndex < this.arr.length) {
+                swapIndex = rightIndex
+            } else if (leftValue > rightValue && leftValue >= this.arr[currentIndex] && leftIndex < this.arr.length) {
+                swapIndex = leftIndex
+            }
+
+            if (swapIndex === -1) {
+                break
+            } else {
+                this.swap(currentIndex, swapIndex)
+                currentIndex = swapIndex
+            }
+        }
+
 
         return max
 
     }
-
-
 }
+
 
 const heap = new MaxHeap()
 const arr = [1, 10, 8, 9, 10, 2, 3, 4, 8, 8, 6]
 
-arr.forEach(elem => heap.push(elem))
+arr.forEach(val => heap.insert(val))
 
 console.log({
-    arr: arr,
+    arr,
     maxHeap: heap.arr,
-    topK: new Array(4).fill('').map(_ => heap.pop())
+    top4: [...new Array(4)].fill(0).map(val => heap.pop())
 })
