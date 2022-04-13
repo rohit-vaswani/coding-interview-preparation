@@ -32,6 +32,34 @@
 
     TODO_REMEMBER: DOM API
 
+    Node
+        set
+            document.createElement(tagName)
+            document.createTextNode(textStr)
+         get
+            document.getElementsByTagName(tagName)
+            document.getElementById(id)
+            document.getElementsByClassName(className)
+
+    Attributes
+        set
+            node.setAttribute(name, value)
+        get
+            node.getAttribute(name)
+            node.getAttributeNames()
+            node.attributes -> Iterable through {name, value} -> Check TODO
+        has
+            document.hasAttributes()
+            document.hasAttribute()
+
+    Class
+        node.classList
+        node.classList.add(newClassName)
+        [...node.classList].includes(checkClassName)
+
+
+    Child Nodes
+
 
     Create
         document.createElement(tagName)
@@ -45,6 +73,9 @@
     Set
         node.setAttribute(name, value)
 
+    Remove
+        node.removeAttribute(name)
+
     Check
         node.hasAttributes()
         node.hasChildNodes()
@@ -56,6 +87,8 @@
 
     NodeType
         node.nodeType
+        1 ->?
+        3 ->?
 
 
  */
