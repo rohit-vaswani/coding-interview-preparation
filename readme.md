@@ -203,21 +203,26 @@ DS or built-in or helper functions
    -- Cases problem, handle [compress-a-string]
    -- String/Array problem, example and passes [longest-substring-with-unique-characters, Count-palindromic-substrings]
    -- non-comprehensive, english translation [countRangeSum, event-delegation]
-   -- Steps [event-delegation, LargestPalindrome]
+   -- Steps [event-delegation, LargestPalindrome, construct-object]
    
+
+# Statements to help
+ - Ultimately you have to find a (index) [first-failed-commit]
+ - One thing we are sure is to (iterate over the elements) 
+
 # Still Unable to solve the problem
 -- Understand the problem's input and output
 -- Understand if this is a recursive problem or not? (below section)
--- Understand the problem using simpler/minimal/positive/negative example [find-median-of-2-sorted-array]
+-- Understand the problem using simpler/minimal/positive/negative example [find-median-of-2-sorted-array, first-failed-commit]
 -- Write how each pass will look like [find-median-of-2-sorted-array]
--- understand the flow of the problem in plain english [find-median-of-2-sorted-array, LargestPalindrome]
--- Understand what exactly you need to achieve to solve this problem. [LargestPalindrome]
+-- understand the flow of the problem in plain english & doing dry runs [find-median-of-2-sorted-array, LargestPalindrome, first-failed-commit]
+-- Understand what exactly you need to achieve to solve this problem. [LargestPalindrome, first-failed-commit]
 
 ## Is this is a recursive problem or iterative problem
 -- Many possible cases at each point of the time? [editDistance, coinChange, maxConnectedBoxes]
--- is this a repeating problem?
+-- is this a repeating problem? [construct-object]
 
-## Recursive approach [decodeStr]
+## Recursive approach [decodeStr, construct-object]
 1. Confirm yourself the return type / output of the function*
 2. Always take minimal example to understand the problem/solution better.   
 3. Identify base conditions. Handle them first.
