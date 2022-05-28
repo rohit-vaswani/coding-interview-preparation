@@ -86,6 +86,7 @@
    a) What if the array is Empty?
    b) *Can I assume* that all the values are numeric?
    c) *Can you please confirm* if all the values will be single digit number (0-9)?
+   d) DO I need to do input validation?
 2. Discuss solution/examples: approaches / examples / cases highly
     - *Discuss cases/steps/base-conditions/helper-methods/examples/data-models(parkingLot)/data-structures/methodology/algorithm/Iteration/English statement
     a) Talk about multiple approaches/methodology.

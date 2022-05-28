@@ -18,7 +18,7 @@
                 - Examples [Took simpler example]
                 - Output comments [To better understand]
         TODO_REMEMBER:
-            a)
+            a) Understanding terminologies:  _abc: Leading underscore; abc_: Trailing underscore.
         TODO_SOLUTION:
             a)
 */

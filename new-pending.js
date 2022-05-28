@@ -22,6 +22,16 @@
         99. https://bigfrontend.dev/problem/extract-all-anchor-elements-from-HTML-string
         98. https://bigfrontend.dev/problem/validate-an-ip-address [regex]
         82.https://bigfrontend.dev/problem/find-available-meeting-slots [Not solved 100%]
+        78. https://bigfrontend.dev/problem/convert-HEX-color-to-RGBA
+        77. https://bigfrontend.dev/problem/implement-BigInt-subtraction-with-sign
+        76. https://bigfrontend.dev/problem/implement-BigInt-addition-with-sign
+        75. https://bigfrontend.dev/problem/implement-BigInt-subtraction
+        74. https://bigfrontend.dev/problem/implement-Observable-transformation-operators [Dependant on 57]
+        73. https://bigfrontend.dev/problem/implement-Observable-fromEvent [Dependant on 57]
+        72. https://bigfrontend.dev/problem/implement-Observable-interval [Dependant on 57]
+        71. https://bigfrontend.dev/problem/implement-Observable-Subject [Dependant on 57]
+        70. https://bigfrontend.dev/problem/implement-Observable-from [Dependant on 57]
+        67. https://bigfrontend.dev/problem/create-your-own-Promise/discuss [Revise it]
 
  */
 
