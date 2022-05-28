@@ -200,14 +200,14 @@ DS or built-in or helper functions
    -- Helper/Built-in functions to use. [merge-sorted-arrays, largestNumber, LargestPalindrome]
    -- Responsibility & Input/Output of each function. [create-a-fake-timer-setInterval, parkingLot]
    -- Recursive problem, Recursion [create-an-interval, LargestPalindrome]
-   -- Cases problem, handle [compress-a-string]
+   -- Cases problem, handle [compress-a-string, convert-snake_case-to-camelCase]
    -- String/Array problem, example and passes [longest-substring-with-unique-characters, Count-palindromic-substrings]
    -- non-comprehensive, english translation [countRangeSum, event-delegation]
    -- Steps [event-delegation, LargestPalindrome, construct-object]
    
 
 # Statements to help
- - Ultimately you have to find a (index) [first-failed-commit]
+ - Ultimately you have to find a (index) [first-failed-commit, merge-sorted-arrays]
  - One thing we are sure is to (iterate over the elements) 
 
 # Still Unable to solve the problem

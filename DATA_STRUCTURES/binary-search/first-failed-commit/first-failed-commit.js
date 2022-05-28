@@ -14,6 +14,7 @@
         TODO_TAKEAWAY:
             a) We understood the problem better using positive, negative, simple example
             b) We understood the problem better by knowing what ultimately we have to do after each loop
+            c)
         TODO_REMEMBER:
             a)
         TODO_SOLUTION:

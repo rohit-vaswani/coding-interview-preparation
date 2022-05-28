@@ -12,7 +12,7 @@
         TODO_QUESTIONS:
             a)
         TODO_TAKEAWAY:
-            a)
+            a) Ultimately you have to find a right target arr Index and it's correct index which we have to push
         TODO_REMEMBER:
             a) Identify the total times you should iterate by summing the length of individual array.
         TODO_SOLUTION:
@@ -22,58 +22,49 @@
 */
 
 
-const merge = (...arr) => {
+const getAndUpdateIndex = (arr, indexMap) => {
 
-    // TODO_REMEMBER: Identify the total times you should iterate by summing the length of individual array
-    const length = arr.reduce((len, subArr) => len + subArr.length, 0)
-    const indicesMap = arr.reduce((map, subArr, index) => {
-        map.set(index, 0)
-        return map
-    }, new Map())
+    let minIndex = 0
+    let minValue = Infinity
 
-
-    const getNextValue = () => {
-        let lowestValue = Infinity
-        let lowestIndexValue = Infinity
-        let lowestIndexArr = -1
-
-        // Identify the Arr with Lowest Index
-        for (let [arrIndex, valueIndex] of indicesMap.entries()) {
-            if (arr[arrIndex][valueIndex] <= lowestValue ) {
-                lowestValue = arr[arrIndex][valueIndex]
-                lowestIndexValue = valueIndex
-                lowestIndexArr = arrIndex
-            }
+    arr.forEach((targetArr, targetArrIndex) => {
+        const cIndex = indexMap.get(targetArrIndex) ?? 0
+        if (targetArr[cIndex] < minValue) {
+            minIndex = targetArrIndex
+            minValue = targetArr[cIndex]
         }
+    })
 
-
-        // Update the index in the Map
-        if (arr[lowestIndexArr][lowestIndexValue + 1] !== undefined) {
-            indicesMap.set(lowestIndexArr, lowestIndexValue + 1)
-        } else {
-            indicesMap.delete(lowestIndexArr)
-        }
-
-        return lowestValue
-
-    }
-
-
-    const answerArr = []
-    for (let i = 0; i < length; i++) {
-        const value = getNextValue()
-        answerArr.push(value)
-    }
-
-    return answerArr
+    const val = arr[minIndex][indexMap.get(minIndex) ?? 0]
+    indexMap.set(minIndex, (indexMap.get(minIndex) ?? 0) + 1)
+    return val
 
 }
 
+
+const merge = (arr) => {
+
+
+    const res = []
+    const indexMap = new Map()
+    const itemsCount = arr.reduce((len, arr) => len + arr.length, 0)
+
+    for (let i = 0; i < itemsCount; i++) {
+        res.push(getAndUpdateIndex(arr, indexMap))
+    }
+
+    return res
+
+}
+
+
 const ans = merge(
-    [1, 1, 1, 100, 1000, 10000],
-    [1, 2, 2, 2, 200, 200, 1000],
-    [1000000, 10000001],
-    [2, 3, 3]
+    [
+        [1, 1, 1, 100, 1000, 10000],
+        [1, 2, 2, 2, 200, 200, 1000],
+        [1000000, 10000001],
+        [2, 3, 3]
+    ]
 )
 
 console.log('ANSWER', ans)
