@@ -32,6 +32,10 @@
         71. https://bigfrontend.dev/problem/implement-Observable-Subject [Dependant on 57]
         70. https://bigfrontend.dev/problem/implement-Observable-from [Dependant on 57]
         67. https://bigfrontend.dev/problem/create-your-own-Promise/discuss [Revise it]
+        64. https://bigfrontend.dev/problem/retry-promise-on-rejection [Complex]
+        62. https://bigfrontend.dev/problem/add-BigInt-string
+        61.
+
 
  */
 

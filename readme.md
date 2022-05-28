@@ -212,7 +212,7 @@ DS or built-in or helper functions
  - One thing we are sure is to (iterate over the elements) 
 
 # Still Unable to solve the problem
--- Understand the problem's input and output
+-- Understand the problem's input and output [create-a-browser-history]
 -- Understand if this is a recursive problem or not? (below section)
 -- Understand the problem using simpler/minimal/positive/negative example [find-median-of-2-sorted-array, first-failed-commit]
 -- Write how each pass will look like [find-median-of-2-sorted-array]
