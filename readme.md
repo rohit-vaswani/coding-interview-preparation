@@ -204,7 +204,7 @@ DS or built-in or helper functions
    -- Cases problem, handle [compress-a-string, convert-snake_case-to-camelCase]
    -- String/Array problem, example and passes [longest-substring-with-unique-characters, Count-palindromic-substrings, add-comma-to-number]
    -- non-comprehensive, english translation [countRangeSum, event-delegation]
-   -- Steps [event-delegation, LargestPalindrome, construct-object]
+   -- Steps [event-delegation, LargestPalindrome, construct-object, smart-sale]
    
 
 # Statements to help
