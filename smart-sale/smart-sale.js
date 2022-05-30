@@ -12,7 +12,8 @@
         TODO_QUESTIONS:
             a)
         TODO_TAKEAWAY:
-            a)
+            a) Understand the problem better by identifying the steps to solve it.
+            b) Understand the problem better by writing the output against each other.
         TODO_REMEMBER:
             a)
         TODO_SOLUTION:
@@ -84,7 +85,7 @@ const smartSale = (arr = [], m = 1) => {
 // }
 
 
-smartSale([1, 2, 3, 1, 2, 2, 3], 2) // 2
+console.log(smartSale([1, 2, 3, 1, 2, 2, 3], 2)) // 2
 // console.log(smartSale([1, 1, 1, 2, 2, 3], 3)); // [1, 1, 1, 3] --> 1
 // console.log(smartSale([1, 1, 2, 2, 2, 3], 2)); // [2, 2, 2, 3]
 // console.log(smartSale([1, 1, 2, 2, 3, 4], 2)); // [1, 1, 2, 2]
