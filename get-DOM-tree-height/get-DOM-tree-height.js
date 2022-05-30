@@ -1,7 +1,7 @@
 /*
-        Source: ?
+        Source: https://bigfrontend.dev/problem/get-DOM-tree-height [58_BFE]
         Solution link: ?
-        Difficulty: TODO_DI_EASY | TODO_DI_MEDIUM | TODO_DI_HARD
+        Difficulty: TODO_DI_EASY
         Algorithm: ?
         Company: ?
         DataStructure: ?

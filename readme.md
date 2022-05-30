@@ -199,7 +199,7 @@ DS or built-in or helper functions
 2. Tackle the problem
    -- Complex problem, DS.
    -- Helper/Built-in functions to use. [merge-sorted-arrays, largestNumber, LargestPalindrome]
-   -- Responsibility & Input/Output of each function. [create-a-fake-timer-setInterval, parkingLot]
+   -- Responsibility & Input/Output of each function. [create-a-fake-timer-setInterval, parkingLot, create-an-Observable]
    -- Recursive problem, Recursion [create-an-interval, LargestPalindrome]
    -- Cases problem, handle [compress-a-string, convert-snake_case-to-camelCase]
    -- String/Array problem, example and passes [longest-substring-with-unique-characters, Count-palindromic-substrings, add-comma-to-number]
