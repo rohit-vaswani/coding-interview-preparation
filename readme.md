@@ -82,23 +82,35 @@
     
 
 ## Sequences of discussion while in an interview [addADigit, parkingLot]
-1. Discuss problem: Seek Clarification / ask ambiguity / communicate assumptions / discuss edge cases
-   a) What if the array is Empty?
-   b) *Can I assume* that all the values are numeric?
-   c) *Can you please confirm* if all the values will be single digit number (0-9)?
-   d) DO I need to do input validation?
-2. Discuss solution/examples: approaches / examples / cases highly
-    - *Discuss cases/steps/base-conditions/helper-methods/examples/data-models(parkingLot)/data-structures/methodology/algorithm/Iteration/English statement
-    a) Talk about multiple approaches/methodology.
-    b) Talk about why this approach is not better.
-    c) Talk about how you can optimize it. (Iterative/Recursive/Dynamic/Sliding/Traversal)
-    d) Communicate flow and do a dry run if required
-    e) *I am thinking to take* a recursive_approach wherein I will do ...
-    f) *Can I say for an input X*, the output should be Y.
-    g) *If you are comfortable with the approach*, we can move to the implementation part?
-    h) Let's go through another example to understand it even better.
-    i) Can I take a simpler example to better example to better understand
-    j) THINK THIS WAY, WHAT YOU NEED AT THE END OF THE DAY TO SOLVE THIS PROBLEM [implement-Math-sqrt, implement-partial, implement-String-prototype-trim]  
+1. Discuss Input & output:
+     - Edge cases
+     - Input validations
+     - Sample Inputs
+     - Seek Clarification / ask ambiguity / communicate assumptions / discuss edge cases / Take different examples
+           a) What if the array is Empty?
+           b) *Can I assume* that all the values are numeric?
+           c) *Can you please confirm* if all the values will be single digit number (0-9)?
+           d) DO I need to do input validation?
+2. Discuss Approaches
+    - Steps to take
+    - cases to handle
+    - Methodology to use [Recursion, Iteration]
+    - Communicate the solution in english
+    - Identify helper functions [input & output]
+    - Identify the API of the class
+    - Write sample output against each step
+    - Iteration & passes looks like
+    - Data Structures to use [Map, Set, Array, LL]
+        a) Talk about multiple approaches/methodology.
+        b) Talk about why this approach is not better.
+        c) Talk about how you can optimize it. (Iterative/Recursive/Dynamic/Sliding/Traversal)
+        d) Communicate flow and do a dry run if required
+        e) *I am thinking to take* a recursive_approach wherein I will do ...
+        f) *Can I say for an input X*, the output should be Y.
+        g) *If you are comfortable with the approach*, we can move to the implementation part?
+        h) Let's go through another example to understand it even better.
+        i) Can I take a simpler example to better example to better understand
+        j) THINK THIS WAY, WHAT YOU NEED AT THE END OF THE DAY TO SOLVE THIS PROBLEM [implement-Math-sqrt, implement-partial, implement-String-prototype-trim]  
 3. Discuss Pseudo code
     a) Write the pseudo code
     b) Do the dry run: i) Write passes of the iteration ii) Talk about the base/non-base conditions
@@ -198,18 +210,21 @@ DS or built-in or helper functions
 1. Understand the problem, example, input, output and expectations very clearly [create-a-fake-timer-setInterval]
 2. Tackle the problem
    -- Complex problem, DS.
-   -- Helper/Built-in functions to use. [merge-sorted-arrays, largestNumber, LargestPalindrome]
+   -- Helper/Built-in functions to use. [merge-sorted-arrays, largestNumber, LargestPalindrome, highlight-keywords-in-HTML-string]
    -- Responsibility & Input/Output of each function. [create-a-fake-timer-setInterval, parkingLot, create-an-Observable]
    -- Recursive problem, Recursion [create-an-interval, LargestPalindrome]
    -- Cases problem, handle [compress-a-string, convert-snake_case-to-camelCase]
    -- String/Array problem, example and passes [longest-substring-with-unique-characters, Count-palindromic-substrings, add-comma-to-number]
    -- non-comprehensive, english translation [countRangeSum, event-delegation]
-   -- Steps [event-delegation, LargestPalindrome, construct-object, smart-sale]
-   
+   -- Steps [event-delegation, LargestPalindrome, construct-object, smart-sale, highlight-keywords-in-HTML-string]
+- NEVER JUMP TO THE IMPL, IF YOU CANNOT VISUALISE HOW TO SOLVE IT.   
 
 # Statements to help
  - Ultimately you have to find a (index) [first-failed-commit, merge-sorted-arrays]
  - One thing we are sure is to (iterate over the elements) 
+
+
+
 
 # Still Unable to solve the problem
 -- Understand the problem's input and output [create-a-browser-history]
