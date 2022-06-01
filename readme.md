@@ -34,6 +34,7 @@
 22. TODO_SOLUTION       Steps taken to solve that problem.
 23. TODO_QUESTIONS_ASKED Questions which generally arises when solving that problem.
 24. TODO_APPROACH_TWO_POINTER: Use two pointers to solve the problem
+25. TODO_APPROACH_SLIDING_WINDOW: Sliding window problem.
 
 
 
@@ -208,13 +209,13 @@ DS or built-in or helper functions
 
 # Golden Rule
 1. Understand the problem, example, input, output and expectations very clearly [create-a-fake-timer-setInterval]
-2. Tackle the problem
+2. Understand the problem better
    -- Complex problem, DS.
    -- Helper/Built-in functions to use. [merge-sorted-arrays, largestNumber, LargestPalindrome, highlight-keywords-in-HTML-string]
    -- Responsibility & Input/Output of each function. [create-a-fake-timer-setInterval, parkingLot, create-an-Observable]
    -- Recursive problem, Recursion [create-an-interval, LargestPalindrome]
-   -- Cases problem, handle [compress-a-string, convert-snake_case-to-camelCase]
-   -- String/Array problem, example and passes [longest-substring-with-unique-characters, Count-palindromic-substrings, add-comma-to-number]
+   -- Cases problem, handle [compress-a-string, convert-snake_case-to-camelCase, max-pos-sub-arr-length]
+   -- String/Array problem, example and passes [longest-substring-with-unique-characters, Count-palindromic-substrings, add-comma-to-number, max-pos-sub-arr-length]
    -- non-comprehensive, english translation [countRangeSum, event-delegation]
    -- Steps [event-delegation, LargestPalindrome, construct-object, smart-sale, highlight-keywords-in-HTML-string]
 - NEVER JUMP TO THE IMPL, IF YOU CANNOT VISUALISE HOW TO SOLVE IT.   
