@@ -1,5 +1,7 @@
 /*
-        Source: Asked in Amazon
+        Source:
+            a) https://drive.google.com/file/d/1kdNV4GO0K03xkrVk1giSMM4fgFY9wInM/view?usp=sharing
+            b) https://drive.google.com/file/d/1afAIZph3JJxK8DBdKjnq0Kvlpu6TBdqB/view?usp=sharing
         Solution link: ?
         Difficulty: TODO_DI_EASY
         Algorithm: TODO_APPROACH_SLIDING_WINDOW

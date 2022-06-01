@@ -217,7 +217,7 @@ DS or built-in or helper functions
    -- Cases problem, handle [compress-a-string, convert-snake_case-to-camelCase, max-pos-sub-arr-length]
    -- String/Array problem, example and passes [longest-substring-with-unique-characters, Count-palindromic-substrings, add-comma-to-number, max-pos-sub-arr-length]
    -- non-comprehensive, english translation [countRangeSum, event-delegation]
-   -- Steps [event-delegation, LargestPalindrome, construct-object, smart-sale, highlight-keywords-in-HTML-string]
+   -- Steps [event-delegation, LargestPalindrome, construct-object, smart-sale, highlight-keywords-in-HTML-string, imbalanced-group-count]
 - NEVER JUMP TO THE IMPL, IF YOU CANNOT VISUALISE HOW TO SOLVE IT.   
 
 # Statements to help
