@@ -211,7 +211,8 @@ DS or built-in or helper functions
 1. Understand the problem, example, input, output and expectations very clearly [create-a-fake-timer-setInterval]
 2. Understand the problem better
    -- Complex problem, DS.
-   -- Helper/Built-in functions to use. [merge-sorted-arrays, largestNumber, LargestPalindrome, highlight-keywords-in-HTML-string]
+   -- Helper/
+   Built-in functions to use. [merge-sorted-arrays, largestNumber, LargestPalindrome, highlight-keywords-in-HTML-string]
    -- Responsibility & Input/Output of each function. [create-a-fake-timer-setInterval, parkingLot, create-an-Observable]
    -- Recursive problem, Recursion [create-an-interval, LargestPalindrome]
    -- Cases problem, handle [compress-a-string, convert-snake_case-to-camelCase, max-pos-sub-arr-length]
