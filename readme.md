@@ -274,6 +274,8 @@ Understand the problem better by
 2. Consider maintaining min/max/visited array
 3. Consider how you need to iterate (while(true) with base condition for i & j)
 4. Finding Min/Max helps to easily solve the problem.
+5. Always keep the example in front of you. Take output first approach.
+6. Always do the dry run of the solution
 
 
 # Smart Benchmark problem:
