@@ -4,7 +4,7 @@
         Difficulty: TODO_DI_HARD
         Algorithm: ?
         Company: ?
-        DataStructure: ?
+        DataStructure: TODO_DS_RECURSION
         TODO_STANDARD_PROBLEM: NO
         TODO_NEED_PRACTICE: NO
         TODO_NEED_REVISION: NO
@@ -20,6 +20,7 @@
             a)
 */
 
+// TODO_REMEMBER: Process the data to disprove it, otherwise always return true (The way mind works)
 const isRectangle = (arr, i, j, noRows = 1, noColumns = 1) => {
 
 
