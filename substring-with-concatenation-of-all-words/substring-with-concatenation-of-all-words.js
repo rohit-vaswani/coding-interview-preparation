@@ -8,7 +8,7 @@
         TODO_STANDARD_PROBLEM: NO
         TODO_NEED_PRACTICE: NO
         TODO_NEED_REVISION: NO
-        TODO_BENCHMARK: NO
+        TODO_BENCHMARK: YES
         Solved: June, 2022.
         TODO_QUESTIONS:
             a)
@@ -78,3 +78,33 @@ console.log(ans)
 
 
 
+
+
+    min = 1
+    max = 2
+    nonPositive = 1
+    len = 3
+
+
+
+    const arr = [1,2,0]
+    const sum = 3
+    const min = 1
+    const max = 2
+    const expectedSum = 3
+
+
+        const arr = [3,4,-1,1]
+        const min = 1
+        const max = 4
+        const sum = 8
+        const expected = 10
+        const diff = 2
+
+    const arr = [7,8,9,11,12]
+    min = 7
+    max = 12
+
+
+    const arr = [1,2,0]
+    const min = 3

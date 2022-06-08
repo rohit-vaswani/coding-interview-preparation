@@ -208,6 +208,25 @@ DS or built-in or helper functions
  - Promise.all
 
 
+
+# Understand the input
+    - Different examples / cases
+    - Input validations
+    - Default Value
+
+
+
+
+# Golden Rule
+Understand the problem better by
+    - Steps. Sub-Problems to Solve.
+    - Cases
+    - COMMUNICATE in English
+    - Examples. Positive/Negative/Complex.
+    - Approach
+    - Helper functions & it's responsibility. Sub-Problems.
+    - Output first Approach.
+
 # Golden Rule
 1. Understand the problem, example, input, output and expectations very clearly [create-a-fake-timer-setInterval]
 2. Understand the problem better
@@ -249,3 +268,12 @@ DS or built-in or helper functions
 5. Think about the aggregation operation to converge to the answer.
 
 
+# Iterative Approach [trapping-rain-water]
+1. Think what exactly needs to be done at each iteration [Increase window, call helper function, terminate, find prev min]
+2. Consider maintaining min/max/visited array
+3. Consider how you need to iterate (while(true) with base condition for i & j)
+4. Finding Min/Max helps to easily solve the problem.
+
+
+# Smart Benchmark problem:
+substring-with-concatenation-of-all-words
