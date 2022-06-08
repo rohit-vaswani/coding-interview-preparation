@@ -9,6 +9,7 @@
         Status: UnSolved
         Type:
         Approach:
+        Tag:
 
 
     1. Find Maximum between two numbers if they are sorted [Bucket Sort]
@@ -16,6 +17,7 @@
         Solution: https://leetcode.com/problems/maximum-gap/discuss/1240543/Python-Bucket-sort-explained
         Status: Unsolved
         Type: Array Operations
+        Tag: TODO_REMEMBER
         Approach:
             a) Divide n numbers ranging from low(2) to high(82) into n-1 buckets
             b) Each number will be placed into respective bucket at 0th. Hash Map

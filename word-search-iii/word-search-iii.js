@@ -1,6 +1,6 @@
 /*
         Source: https://leetcode.com/problems/word-search-ii/
-        Solution link: ?
+        Solution link: OWN
         Difficulty: TODO_DI_HARD
         Algorithm: ?
         Company: ?
@@ -17,7 +17,7 @@
         TODO_REMEMBER:
             a)
         TODO_SOLUTION:
-            a)
+            a) Solved part of the problem, rest is simple.
 */
 
 

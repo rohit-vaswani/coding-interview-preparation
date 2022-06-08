@@ -261,12 +261,13 @@ Understand the problem better by
 -- Many possible cases at each point of the time? [editDistance, coinChange, maxConnectedBoxes]
 -- is this a repeating problem? [construct-object]
 
-## Recursive approach [decodeStr, construct-object]
+## Recursive approach [decodeStr, construct-object, word-search-iii]
 1. Confirm yourself the return type / output of the function*
 2. Always take minimal example to understand the problem/solution better.   
 3. Identify base conditions. Handle them first.
 4. Handle non-base condition, one-by-one. Make yourself fool that recursive function will return the proper answer.
 5. Think about the aggregation operation to converge to the answer.
+6. Always think the example while defining non-base conditions
 
 
 # Iterative Approach [trapping-rain-water]
@@ -275,7 +276,7 @@ Understand the problem better by
 3. Consider how you need to iterate (while(true) with base condition for i & j)
 4. Finding Min/Max helps to easily solve the problem.
 5. Always keep the example in front of you. Take output first approach.
-6. Always do the dry run of the solution
+6. Always do the dry run of the solution.
 
 
 # Smart Benchmark problem:
