@@ -4,7 +4,7 @@
         Difficulty: TODO_DI_HARD
         Algorithm: ?
         Company: ?
-        DataStructure: ?
+        DataStructure: TODO_DS_STRING_ARRAY
         TODO_STANDARD_PROBLEM: NO
         TODO_NEED_PRACTICE: NO
         TODO_NEED_REVISION: NO
@@ -18,8 +18,9 @@
             a) slice also works on the string (i, index+1)
             b) substr works on the string (i, len)
             c) includes is present on string
+            d) arr.splice(index, len) would have deleted the total len items starting at index i of the original array
         TODO_SOLUTION:
-            a)
+            a) Process window size as total words length
 */
 
 const hasAllWords = (subStr, words) => {
