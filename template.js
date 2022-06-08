@@ -9,6 +9,7 @@
         TODO_NEED_PRACTICE: NO
         TODO_NEED_REVISION: NO
         TODO_BENCHMARK: NO
+        Solved: June, 2022.
         TODO_QUESTIONS:
             a)
         TODO_TAKEAWAY:

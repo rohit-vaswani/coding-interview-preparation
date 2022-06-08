@@ -14,55 +14,65 @@
         TODO_TAKEAWAY:
             a) Complete the flow using helper functions
             b) keep the SIMPLE example in front to better understand
+            c) KEEP THE EXAMPLE IN FRONT OF YOU, TO BETTER UNDERSTAND WHAT YOU NEED tO WRITE.
+            d) ALWAYS SOLVE THE PROBLEM with true as the outcome. It keep your mind in right direction
         TODO_REMEMBER:
-            a) Multi conditions in for loop can be written with logical operator. Check beow
+            a) Multi conditions in for loop can be written with logical operator. Check below
+            b) return statement in the for loop takes the control out of it.
         TODO_SOLUTION:
             a)
 */
 
 // Helper function
-const isASmaller = (a, b) => {
+const isBBigger = (a, b) => {
 
-    let isASmaller = true
     a = String(a)
     b = String(b)
 
-    for (let i = 0; i < a.length && i < b.length; i++) {
-        let aVal = a[i]
-        if (+aVal > +b[i]) {
+    let maxLength = Math.max(a.length, b.length)
+    for (let i = 0; i < maxLength; i++) {
+        const aVal = a[i] ?? Infinity
+        const bVal = b[i] ?? -Infinity
+        if (+bVal < +aVal) {
             return false
         }
     }
 
-
-    return isASmaller
-
-}
-
-const largestNumber = (arr) => {
-
-
-    // Sort the array basis custom sort condition
-    let sortedArr = arr.sort((a, b) => {
-
-        if (a === b) {
-            return 0
-        }
-
-        return isASmaller(a, b) ? 1 : -1
-    })
-
-
-    // Join the array to get the result
-    return sortedArr.join('')
+    return true
 
 }
 
 
+// 34, 3 -> false // 34 bigger
+// 3, 30 -> false // 3 bigger
+// 31, 3 -> true // 3 bigger
 
 
-
-const inputArray = [3, 30, 34, 5, 49];
-const output = largestNumber(inputArray);
-console.log('Answer : ', output);
+console.log(isBBigger(30, 3))
+//
+// const largestNumber = (arr) => {
+//
+//     // Sort the array basis custom sort condition
+//     let sortedArr = arr.sort((a, b) => {
+//
+//         if (a === b) {
+//             return 0
+//         }
+//
+//         console.log(a, b, isBBigger(a, b))
+//         return isBBigger(a, b) ? 1 : -1
+//     })
+//
+//     console.log()
+//     console.log(sortedArr)
+//
+//
+//     // Join the array to get the result
+//     return sortedArr.join('')
+//
+// }
+//
+// const inputArray = [3, 30, 34, 5, 9];
+// const output = largestNumber(inputArray);
+// console.log('Answer : ', output);
 

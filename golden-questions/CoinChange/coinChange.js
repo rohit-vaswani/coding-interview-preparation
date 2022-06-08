@@ -22,7 +22,6 @@
 */
 
 
-
 /*
 
     11
@@ -34,8 +33,8 @@
 
 let coins = [1, 2, 5];
 let amount = 11;
-let minCoins = getMinCoins(coins , amount);
-console.log('Output : Min Coins : ' , minCoins);
+let minCoins = getMinCoins(coins, amount);
+console.log('Output : Min Coins : ', minCoins);
 
 function getMinCoins(coins , amount){
 
@@ -64,3 +63,10 @@ function coinChange(coins, amount) {
     return times
 
 }
+
+
+
+let coins = [1, 2, 5];
+let amount = 10;
+let minCoins = getMinCoins(coins, amount);
+console.log('Output : Min Coins : ', minCoins);
