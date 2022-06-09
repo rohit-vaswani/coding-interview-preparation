@@ -270,13 +270,21 @@ Understand the problem better by
 6. Always think the example while defining non-base conditions
 
 
-# Iterative Approach [trapping-rain-water]
+# Iterative Approach [trapping-rain-water, zigzag-conversion]
 1. Think what exactly needs to be done at each iteration [Increase window, call helper function, terminate, find prev min]
 2. Consider maintaining min/max/visited array
 3. Consider how you need to iterate (while(true) with base condition for i & j)
 4. Finding Min/Max helps to easily solve the problem.
 5. Always keep the example in front of you. Take output first approach.
 6. Always do the dry run of the solution.
+
+
+# Kind of Array Problems
+1. Two Pointer [container-with-most-water]
+2. Iteration
+3. Recursion
+4. Maintain min/max array
+5. Fast & Slow moving pointers / tortoise-and-hear
 
 
 # Smart Benchmark problem:
