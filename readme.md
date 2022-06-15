@@ -254,7 +254,7 @@ Understand the problem better by
 -- Understand if this is a recursive problem or not? (below section)
 -- Understand the problem using simpler/minimal/positive/negative example [find-median-of-2-sorted-array, first-failed-commit]
 -- Write how each pass will look like [find-median-of-2-sorted-array]
--- understand the flow of the problem in plain english & doing dry runs [find-median-of-2-sorted-array, LargestPalindrome, first-failed-commit]
+-- understand the flow of the problem in plain english & doing dry runs [find-median-of-2-sorted-array, LargestPalindrome, first-failed-commit, swap-nodes-in-pairs]
 -- Understand what exactly you need to achieve to solve this problem. [LargestPalindrome, first-failed-commit]
 
 ## Is this is a recursive problem or iterative problem
@@ -272,20 +272,75 @@ Understand the problem better by
 
 # Iterative Approach [trapping-rain-water, zigzag-conversion]
 1. Think what exactly needs to be done at each iteration [Increase window, call helper function, terminate, find prev min]
-2. Consider maintaining min/max/visited array
-3. Consider how you need to iterate (while(true) with base condition for i & j)
-4. Finding Min/Max helps to easily solve the problem.
-5. Always keep the example in front of you. Take output first approach.
-6. Always do the dry run of the solution.
+2. Consider how you need to iterate (while(true) with base condition for i & j) [longest-substring-with-unique-characters]
+3. Always keep the example in front of you. Take output first approach.
+4. Always do the dry run of the solution.
+5. Try doing one of below on the array.
+6. DECLARE AS MUCH VARIABLE AS YOU CAN.
 
 
 # Kind of Array Problems
-1. Two Pointer [container-with-most-water]
+1. Two Pointer / Sliding Window problem [container-with-most-water,longest-substring-with-unique-characters] 
 2. Iteration
-3. Recursion
+3. Recursion [DP]
 4. Maintain min/max array
 5. Fast & Slow moving pointers / tortoise-and-hear
+6. Sorting the Array
+7. Maintain Map / Set / extra variable
+8. Pattern
 
 
 # Smart Benchmark problem:
 substring-with-concatenation-of-all-words
+
+# Golden Questions
+1. https://replit.com/@RohitVaswani/FindAndReplaceInString#index.js [Example in front, Comments,English, Each iteration, DataStructure, Output, Steps, Cases, Variables Declaration, Asked in Google]
+2. https://replit.com/@RohitVaswani/ExpressiveWords#index.js [Example Steps, cases, Comments, Example first approach, helper functions, Declare variables]
+
+
+--
+For ex.
+
+If input array is sorted then
+- Binary search
+- Two pointers
+
+If asked for all permutations/subsets then
+- Backtracking
+
+If given a tree then
+- DFS
+- BFS
+
+If given a graph then
+- DFS
+- BFS
+
+If given a linked list then
+- Two pointers
+
+If recursion is banned then
+- Stack
+
+If must solve in-place then
+- Swap corresponding values
+- Store one or more different values in the same pointer
+
+If asked for maximum/minimum subarray/subset/options then
+- Dynamic programming
+
+If asked for top/least K items then
+- Heap
+
+If asked for common strings then
+- Map
+- Trie
+
+Else
+- Map/Set for O(1) time & O(n) space
+- Sort input for O(nlogn) time and O(1) space
+
+Follow SAHEB KUMAR for more 🚀
+
+
+Check out a GitHub repo by Sean Prasad if you're interested to read more about this, it's absolutely amazing!

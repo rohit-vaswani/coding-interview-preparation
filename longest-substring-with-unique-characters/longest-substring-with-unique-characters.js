@@ -29,6 +29,66 @@
                 - add char into the set
 */
 
+
+const longestUniqueSubstr = (str = '') => {
+
+
+    let start = 0
+    let end = start + 1
+    let set = new Set()
+    let ans = ""
+    set.add(str[start])
+
+    while (end < str.length) {
+
+
+        let char = str[end]
+
+        // Case1: Char not present in set
+        if(!set.has(char)) {
+            set.add(char)
+            end++
+        }
+
+        // Case: Char present
+        else {
+
+            // Capture the answer if eligible
+            const currentLen = end - start + 1
+            ans = currentLen > ans.length ? str.slice(start, end) : ans
+            start++
+            end = start + 1
+            set.clear()
+            set.add(str[start])
+        }
+
+    }
+
+    return ans
+
+}
+
+const ans = longestUniqueSubstr("aaaa")
+console.log("ANSWER: ", ans)
+
+/*
+
+
+ */
+
+
+
+/*
+
+
+        abcabc
+
+            s:0;e:1;ans=ab
+            s0;e:2;ans=abc
+            s:1;e:2;ans=bc
+            s:1;e:3;ans=bca
+            s:3;e:5;ans=abc
+
 const longestUniqueSubstr = (str) => {
 
     let start = 0
@@ -58,21 +118,5 @@ const longestUniqueSubstr = (str) => {
     }
 
     return ans
-
-
 }
-
-
-const ans = longestUniqueSubstr("abcapmsdc")
-console.log("ANSWER: ", ans)
-
-/*
-        abcabc
-
-            s:0;e:1;ans=ab
-            s0;e:2;ans=abc
-            s:1;e:2;ans=bc
-            s:1;e:3;ans=bca
-            s:3;e:5;ans=abc
-
  */
