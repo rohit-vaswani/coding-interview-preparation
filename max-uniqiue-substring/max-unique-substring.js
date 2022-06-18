@@ -41,7 +41,7 @@ const fn = (str) => {
             return maxChars
         }
 
-        // When the char is present
+        // When the char is present | SHRINK THE WINDOW
         if (set.has(char)) {
             set.delete(str[i])
             i++

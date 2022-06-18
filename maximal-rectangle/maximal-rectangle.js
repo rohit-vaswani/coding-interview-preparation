@@ -21,6 +21,7 @@
 */
 
 // TODO_REMEMBER: Process the data to disprove it, otherwise always return true (The way mind works)
+// TODO_REMEMBER: This heavy helper function for defining the base condition is crucial for Recursive functions
 const isRectangle = (arr, i, j, noRows = 1, noColumns = 1) => {
 
 

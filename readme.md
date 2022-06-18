@@ -37,6 +37,7 @@
 25. TODO_APPROACH_SLIDING_WINDOW: Sliding window problem.
 26. TODO_DS_STRING_ARRAY
 27. TODO_DS_RECURSION
+28. TODO_DS_BINARY_SEARCH
 
 
 
@@ -215,18 +216,24 @@ DS or built-in or helper functions
     - Input validations
     - Default Value
 
+# Approach the problem using
+    - Take pos/neg/neutral examples
+    - Declare as much as variables
+    - Take output first approach, backtrack to input
+    - Take appropriate approach steps: Array, Recursion
+    - Understand the problem in Plain english
+    - Do the dry run
 
 
-
-# Golden Rule
+# Implement with this approach
 Understand the problem better by
     - Steps. Sub-Problems to Solve.
     - Cases
-    - COMMUNICATE in English
-    - Examples. Positive/Negative/Complex.
-    - Approach
     - Helper functions & it's responsibility. Sub-Problems.
-    - Output first Approach.
+    - Data Structures
+    - Declare more variables
+    - Keeping example in front
+    - Writing comments against each step
 
 # Golden Rule
 1. Understand the problem, example, input, output and expectations very clearly [create-a-fake-timer-setInterval]
@@ -237,7 +244,7 @@ Understand the problem better by
    -- Responsibility & Input/Output of each function. [create-a-fake-timer-setInterval, parkingLot, create-an-Observable]
    -- Recursive problem, Recursion [create-an-interval, LargestPalindrome]
    -- Cases problem, handle [compress-a-string, convert-snake_case-to-camelCase, max-pos-sub-arr-length]
-   -- String/Array problem, example and passes [longest-substring-with-unique-characters, Count-palindromic-substrings, add-comma-to-number, max-pos-sub-arr-length]
+   -- String/Array problem, example and passes [longest-substring-with-unique-characters, Count-palindromic-substrings, add-comma-to-number, max-pos-sub-arr-length, max-consecutive-one]
    -- non-comprehensive, english translation [countRangeSum, event-delegation]
    -- Steps [event-delegation, LargestPalindrome, construct-object, smart-sale, highlight-keywords-in-HTML-string, imbalanced-group-count]
 - NEVER JUMP TO THE IMPL, IF YOU CANNOT VISUALISE HOW TO SOLVE IT.   
@@ -261,14 +268,18 @@ Understand the problem better by
 -- Many possible cases at each point of the time? [editDistance, coinChange, maxConnectedBoxes]
 -- is this a repeating problem? [construct-object]
 
-## Recursive approach [decodeStr, construct-object, word-search-iii]
-1. Confirm yourself the return type / output of the function*
-2. Always take minimal example to understand the problem/solution better.   
-3. Identify base conditions. Handle them first.
-4. Handle non-base condition, one-by-one. Make yourself fool that recursive function will return the proper answer.
-5. Think about the aggregation operation to converge to the answer.
-6. Always think the example while defining non-base conditions
+## Recursive approach [decodeStr, construct-object, word-search-iii, logic.3]
+1. RETURN TYPE: CONFIRM THE RETURN TYPE OF THE FUNCTION, HELPS WRITING AGGREGATION CONDITION EASY* [jump-game]
+3. BASE CONDITION.
+4. NON BASE CONDITION. KNOW POSSIBLE OPTIONS.
+5. AGGREGATION OPERATIONS [Basis return type]
+6. Always take minimal example to understand the problem/solution better.
 
+## SLIDING WINDOW APPROACH
+1. Condition to Expand the window
+2. Condition to shrink the window [max-unique-substring]
+3. Condition to fast-forward / back ward the window  (or back)
+4. Always write j< arr.length & capture ans on the expansion. [max-prison-break]
 
 # Iterative Approach [trapping-rain-water, zigzag-conversion]
 1. Think what exactly needs to be done at each iteration [Increase window, call helper function, terminate, find prev min]
@@ -283,9 +294,9 @@ Understand the problem better by
 1. Two Pointer / Sliding Window problem [container-with-most-water,longest-substring-with-unique-characters] 
 2. Iteration
 3. Recursion [DP]
-4. Maintain min/max array
+4. Maintain min/max array [max-index]
 5. Fast & Slow moving pointers / tortoise-and-hear
-6. Sorting the Array
+6. Sorting the Array / Bucketing [maxGap]
 7. Maintain Map / Set / extra variable
 8. Pattern
 

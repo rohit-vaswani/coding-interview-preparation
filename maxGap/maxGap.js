@@ -1,16 +1,25 @@
+
 /*
-
-    Source: https://leetcode.com/problems/maximum-gap/
-    Solution: https://leetcode.com/problems/maximum-gap/discuss/50643/bucket-sort-JAVA-solution-with-explanation-O(N)-time-and-space
-    Difficulty: TODO_DI_HARD
-    Approach: Bucket Sorting
-    Detailed ApproacH:
-        1. Create gap using (max-min)/(len-1)
-        2. Put the elements into Min_Bucket and Max_Bucket
-        3. The max difference is Min_Bucket[i] - Max_Bucket[i-1]
-
-
+        Source: https://leetcode.com/problems/maximum-gap/
+        Solution: https://leetcode.com/problems/maximum-gap/discuss/50643/bucket-sort-JAVA-solution-with-explanation-O(N)-time-and-space
+        Difficulty: TODO_DI_HARD
+        Algorithm: ?
+        Company: ?
+        DataStructure: ?
+        TODO_STANDARD_PROBLEM: NO
+        TODO_NEED_PRACTICE: NO
+        TODO_NEED_REVISION: NO
+        TODO_BENCHMARK: YES
+        TODO_QUESTIONS:
+            a)
+        TODO_TAKEAWAY:
+            a)
+        TODO_REMEMBER:
+            a)
+        TODO_SOLUTION:
+            a)
 */
+
 
 //Approach1: Bucket Sort
 let arr = [3,6,9,15,1];

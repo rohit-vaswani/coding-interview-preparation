@@ -63,3 +63,14 @@ const firstMissingPositive = (arr = []) => {
 console.log(firstMissingPositive([1, 2, 0]))
 console.log(firstMissingPositive([3, 4, -1, 1]))
 console.log(firstMissingPositive([7, 8, 9, 11, 12]))
+
+
+
+
+/*
+
+    const input = [3,1,3,3,2]
+    const freq = 2
+
+
+ */
