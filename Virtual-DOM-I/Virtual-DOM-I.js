@@ -84,6 +84,8 @@
         node.tagName
         node.attributes
         node.childNodes
+        node.children  [Immediate children]
+        node.innerHTML [To set String as Nodes]
 
     NodeType
         node.nodeType

@@ -44,7 +44,9 @@
                         opacity: 1; transform: scale(1); z-index: 1;
                     }
                }
-        5.
+        5. width: 100%; on a child element is w.r.t immediate parent element.
+        6. Dynamically register an event, register an event on document.body.addEventListener('click', e => {e.target.id === 'xButton'})
+
 
 
 

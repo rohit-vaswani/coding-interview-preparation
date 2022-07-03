@@ -1,3 +1,93 @@
 #app {
-    background-color:  red;
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    position: relative;
+}
+
+#modalCTA {
+    width: 100px;
+    color: black;
+}
+
+#modalContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#modalContent {
+    background-color: #fff;
+    min-height: 50px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cross-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.cross-icon:hover {
+    color: #000;
+}
+
+
+.showModal {
+    opacity: 1;
+    z-index: 1;
+    display: flex;
+    transform: scale(1);
+    animation: showAnim 0.5s
+}
+
+
+.hideModal {
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    transform: scale(0);
+    animation: hideAnim 0.5s;
+}
+
+@keyframes showAnim {
+    from {
+        opacity: 0;
+        transform: scale(0);
+        z-index: -1
+    }
+    to {
+        opacity: 1;
+        z-index: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes hideAnim {
+    from {
+        display: none;
+        opacity: 1;
+        transform: scale(1);
+        z-index: 1
+    }
+    to {
+        opacity: 0;
+        z-index: -1;
+        transform: scale(0);
+    }
 }
