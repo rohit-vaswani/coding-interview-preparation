@@ -1,5 +1,5 @@
 class Graph{
-    
+
     constructor(){
         this.vertices = {
             1: 1,
@@ -21,9 +21,6 @@ class Graph{
         return this.edges[vertex];
     }
 }
-
-let
-
 
 let colors = {
     'R': 1,
@@ -54,7 +51,7 @@ function canGraphBeColored( graph  , colors = {}){
     let canBeColored = true;
 
 
-    
+
     while(unVisitedVertices.size){
 
         let vertex = getNext(unVisitedVertices);

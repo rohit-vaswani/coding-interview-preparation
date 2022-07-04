@@ -134,6 +134,20 @@
 
 
 
+           9. Sliding Window Maximum
+           Problem: https://leetcode.com/problems/sliding-window-maximum/
+           Solution: https://leetcode.com/problems/sliding-window-maximum/discuss/585149/Intuitive-JavaScript-Solution-with-Monotonic-Queue
+           Status: UnSolved
+           Type: TODO_REMEMBER
+           tag: TODO_DS_STRING_ARRAY | Monotonic Queue
+           Approach:
+                a) Flush all the elements in the dequeue from the right, which is lesser than nums[i]
+                b) push nums[i] into queue
+                c) For i >=k-1
+                    - push dequeue[0] to input
+                    - Remove(shift) 0th elem from dequeue if nums[i+1-k] === dequeue[0]
+
+
 
 
 
