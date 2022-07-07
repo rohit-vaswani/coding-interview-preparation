@@ -297,7 +297,7 @@ Understand the problem better by
 4. Maintain min/max array [max-index]
 5. Fast & Slow moving pointers / tortoise-and-hear
 6. Sorting the Array / Bucketing [maxGap]
-7. Maintain Map / Set / extra variable []
+7. Maintain Map / Set / extra variable / Array [logic.9]
 8. Pattern
 
 

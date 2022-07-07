@@ -56,10 +56,6 @@ const removeNthFromEnd = (head, n) => {
     slow.next = slow.next?.next
 
     return head
-
-
-
-
 }
 
 

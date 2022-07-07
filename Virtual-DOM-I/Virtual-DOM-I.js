@@ -89,8 +89,8 @@
 
     NodeType
         node.nodeType
-        1 ->?
-        3 ->?
+        1 -> [Other DOM nodes]
+        3 -> text [span, text, label]
 
 
  */
