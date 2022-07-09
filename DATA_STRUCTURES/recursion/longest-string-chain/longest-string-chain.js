@@ -40,7 +40,7 @@ const longestStrChain = function (words) {
 
     console.log(map)
 
-    const maxLevels = Math.max.apply(null, map[minLevel].map(word => getLargestLevel(map, minLevel, minLevel, maxLevel, word)))
+    const maxLevels = Math.max.apply(null, map[minLevel].map(word => getLargestLevel(map, minLevel, maxLevel, word)))
     return maxLevels - minLevel + 1
 };
 
@@ -48,7 +48,7 @@ const isPredecessor = (smaller, larger) => {
     const largerLen = larger.length
 
 
-    if(smaller.length + 1 !== largerLen) {
+    if (smaller.length + 1 !== largerLen) {
         return false
     }
 
@@ -73,7 +73,7 @@ const isPredecessor = (smaller, larger) => {
 }
 
 
-const getLargestLevel = (wordMap, currentLevel = 1, minLevel, maxLevel, previousWord) => {
+const getLargestLevel = (wordMap, currentLevel = 1, maxLevel, previousWord) => {
 
 
     if (currentLevel === maxLevel) {
@@ -85,12 +85,10 @@ const getLargestLevel = (wordMap, currentLevel = 1, minLevel, maxLevel, previous
     let nextLevelWords = wordMap[currentLevel + 1] ?? []
     for (let i = 0; i < nextLevelWords.length; i++) {
         if (isPredecessor(previousWord, nextLevelWords[i])) {
-            const currentLevelMax = getLargestLevel(wordMap, currentLevel + 1, minLevel, maxLevel, nextLevelWords[i])
-            if (currentLevelMax !== -1) {
-                maxLevel = Math.max(currentLevelMax, maxLevelAnswer)
-            }
+            const currentLevelMax = getLargestLevel(wordMap, currentLevel + 1, maxLevel, nextLevelWords[i])
+            maxLevel = Math.max(currentLevelMax, maxLevelAnswer)
         } else {
-            return -1
+            return currentLevel
         }
     }
 
@@ -99,4 +97,4 @@ const getLargestLevel = (wordMap, currentLevel = 1, minLevel, maxLevel, previous
 
 
 // console.log(longestStrChain(["a","ba","bca","bda","bdca"]))
-console.log(longestStrChain(["xbc","pcxbcf","xb","cxbc","pcxbc"]))
+console.log(longestStrChain(["xbc", "pcxbcf", "xb", "cxbc", "pcxbc"]))
