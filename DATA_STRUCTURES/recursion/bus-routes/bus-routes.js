@@ -1,7 +1,7 @@
 /*
         Source: https://leetcode.com/problems/bus-routes/
         Solution link: OWN
-        Difficulty: TODO_DI_MEDIUM
+        Difficulty: TODO_DI_HARD
         Algorithm: ?
         Company: TODO_CO_UBER [https://leetcode.com/discuss/interview-experience/1639865/Uber-or-L4-or-Bangalore-or-India-or-Virtual-Onsite-or-November-2021-Offer]
         DataStructure: ?
@@ -9,7 +9,7 @@
         TODO_NEED_PRACTICE: NO
         TODO_NEED_REVISION: NO
         TODO_BENCHMARK: NO
-        Solved: June, 2022.
+        Solved: July, 2022.
         TODO_QUESTIONS:
             a)
         TODO_TAKEAWAY:

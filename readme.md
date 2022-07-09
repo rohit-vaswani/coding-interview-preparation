@@ -225,15 +225,7 @@ DS or built-in or helper functions
     - Do the dry run
 
 
-# Implement with this approach
-Understand the problem better by
-    - Steps. Sub-Problems to Solve.
-    - Cases
-    - Helper functions & it's responsibility. Sub-Problems.
-    - Data Structures
-    - Declare more variables
-    - Keeping example in front
-    - Writing comments against each step
+
 
 # Golden Rule
 1. Understand the problem, example, input, output and expectations very clearly [create-a-fake-timer-setInterval]
@@ -258,11 +250,25 @@ Understand the problem better by
 
 # Still Unable to solve the problem
 -- Understand the problem's input and output [create-a-browser-history]
--- Understand if this is a recursive problem or not? (below section)
 -- Understand the problem using simpler/minimal/positive/negative example [find-median-of-2-sorted-array, first-failed-commit]
 -- Write how each pass will look like [find-median-of-2-sorted-array]
 -- understand the flow of the problem in plain english & doing dry runs [find-median-of-2-sorted-array, LargestPalindrome, first-failed-commit, swap-nodes-in-pairs]
 -- Understand what exactly you need to achieve to solve this problem. [LargestPalindrome, first-failed-commit]
+
+
+
+
+# STEPS FOR THINKING APPROACH OF THE PROBLEM [4 steps to think when PS is given]
+Understand the problem better by
+- Steps. Sub-Problems to Solve.
+- Cases
+- Helper functions & it's responsibility. Sub-Problems.
+- Data Structures
+- Declare more variables
+- Keeping example in front
+- Writing comments against each step
+- EXPLAIN THE PROBLEM IN PLAIN ENGLISH
+
 
 ## Is this is a recursive problem or iterative problem
 -- Many possible cases at each point of the time? [editDistance, coinChange, maxConnectedBoxes]
