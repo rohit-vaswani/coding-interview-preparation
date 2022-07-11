@@ -31,34 +31,63 @@
 
  */
 
-const smartSale = (arr = [], m = 1) => {
+// const smartSale = (arr = [], m = 1) => {
+//
+//     // Create a freq Map
+//     const freqMap = arr.reduce((map, val) => {
+//         const freq = map.get(val) ?? 0
+//         map.set(val, freq + 1)
+//         return map
+//     }, new Map())
+//
+//     // Put them into array
+//     let freqArr = []
+//     for(let [key, value] of freqMap.entries()) {
+//         freqArr.push([key, value])
+//     }
+//
+//     // Sort the Freq Arr
+//     freqArr = freqArr.sort((a, b) => {
+//         return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0
+//     })
+//
+//     // Flatten the array
+//     const outputArr = freqArr.reduce( (outputArr, arrItem) => {
+//         outputArr = [...outputArr, ...new Array(arrItem[1]).fill(arrItem[0])]
+//         return outputArr
+//     }, [])
+//
+//     // Find the unique
+//     return [...new Set(outputArr.slice(m)).keys()].length
+//
+// }
 
-    // Create a freq Map
-    const freqMap = arr.reduce((map, val) => {
-        const freq = map.get(val) ?? 0
-        map.set(val, freq + 1)
+
+const smartSale = (ids, m) => {
+
+
+    // Create the map with value as the frequency
+    const freqMap = ids.reduce((map, id) => {
+        const freq = map.get(id) ?? 0
+        map.set(id, freq + 1)
         return map
     }, new Map())
 
-    // Put them into array
-    let freqArr = []
-    for(let [key, value] of freqMap.entries()) {
-        freqArr.push([key, value])
-    }
 
-    // Sort the Freq Arr
-    freqArr = freqArr.sort((a, b) => {
-        return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0
-    })
+    // Create the entries
+    const freqEntries = [...freqMap.entries()]
 
-    // Flatten the array
-    const outputArr = freqArr.reduce( (outputArr, arrItem) => {
-        outputArr = [...outputArr, ...new Array(arrItem[1]).fill(arrItem[0])]
-        return outputArr
+    // Sort the freq
+    const sortedIds = freqEntries.sort((a, b) => a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0)
+
+    // Flatten it
+    const flattenedSortedEntries = sortedIds.reduce((flattenEntries, entry) => {
+        flattenEntries.push(...[...new Array(entry[1]).fill(entry[0])])
+        return flattenEntries
     }, [])
 
-    // Find the unique
-    return [...new Set(outputArr.slice(m)).keys()].length
+
+    return [...new Set(flattenedSortedEntries.slice(m)).keys()].length
 
 }
 
