@@ -1,8 +1,4 @@
-console.log('Hey')
-
-
 function playSegments(coins) {
-    // Write your code here
 
     // Construct left Array
     const len = coins.length

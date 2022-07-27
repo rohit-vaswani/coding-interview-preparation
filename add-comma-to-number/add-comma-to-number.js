@@ -238,28 +238,31 @@
 //
 //
 // // 2342342342567890.1,2
-// // const addComma = (num) => {
-// //
-// //
-// //     const numStr = String(num)
-// //     const [no, precision] = numStr.split('.') // ['2567890', '1,2']
-// //     const arr = Array.from(no) // ['2', '5', '6', '7', '8', '9', '0']
-// //
-// //     const times = Math.ceil(arr.length / 3)
-// //
-// //     let formattedNo = ""
-// //     for (let i = 1,; i <= times; i++) {
-// //         const last3Digits = arr.slice(-3).join('')
-// //         const separator = i !== 1, ? ',' : ''
-// //         arr.length = arr.length > 3 ? arr.length - 3 : arr.length   // TODO_REMEMBER: Reducing the arr length helps you to cut the elements
-// //         formattedNo = `${last3Digits}${separator}${formattedNo}` // 2,567,890
-// //     }
-// //
-// //     return precision.length ? `${formattedNo}.${precision}` : formattedNo
-// //
-// //
-// // }
-//
-// // console.log(addComma('1,01,2342342342567890.1,2'))
 
+
+
+const addComma = (num) => {
+    let [no, decimal] = String(num).split('.')
+  
+  
+    let strNo = String(Math.abs(no))
+    let isNegative = num < 0
+    let ans = ''
+    let len = strNo.length
+    let index = len - 1
+    
+    for(let i=index;i>=0;i--) {
+      let char = strNo[i]
+      const shouldAddComma = (len - 1 - i) % 3 === 0 && i !== len - 1
+      ans = `${char}${shouldAddComma ? ',' : ''}${ans}` 
+    }
+  
+    return `${isNegative ? '-' : ''}${ans}${!!decimal ? `.${decimal}` : ''}`
+    
+    
+  }
+  
+  console.log(addComma(12345678.12345))
+  console.log(addComma(-12345678))
+  console.log(addComma(1000))
 

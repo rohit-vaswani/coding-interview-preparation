@@ -31,10 +31,6 @@ const noOfSlots = 8
 */
 
 
-
-[1,2,3]
-
-
 const findMaxConSlots = (removedSlots) => {
 
 

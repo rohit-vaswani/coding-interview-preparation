@@ -19,65 +19,62 @@
             a) Set has API -> .add, .has, .entries, .delete, .clear
             b) Map has API -> .set, .has, .entries, .delete, .get, .clear
         TODO_SOLUTION:
+            1. Expand
+                - When unique
+                - Not present str[j]
+                - Add to set
+                - updateTempAnswer basis check
+                - j++
+            2. Shrink
+                - remove i from set
+                - i++
+            3. Terminating
+                - j === length -1
+            4. Helper function
+                - getSmallerStr
             a) Create a map maintaining last index of the chat
             b) Everytime you push a char, check last char is greater than current char and last char with higher end index is present in the map.
                 i) yes, keep removing
                 b) no, add the current char.
 */
 
-/*
 
 
-    Input: xyzabcxyzabc
 
-
-    Map:
-    {a: 3, b:4, c:5, x:6, y:7, z:8}
-
-    Stack:
-        x
-        xy
-        xyz
-        a
-        ab
-        abc
-        abcx
-        abcxy
-        abcxyz
- */
-
-
-function smallestUniqueSubstr(str) {
-
-    const stack = []
-    const map = new Map()
-
-
-    // Construct last index map
-    let chars = [...str]
-    chars.forEach((char, index) => {
-        map.set(char, index)
-    })
-
-    chars.forEach( (char, index) => {
-
-
-        let lastCharInStack = stack.slice(-1)[0]
-
-
-        while (lastCharInStack > char && map.get(lastCharInStack) > index && stack.length) {
-            stack.pop()
-        }
-
-        if(!stack.includes(char)) {
-            stack.push(char)
-        }
-
-    })
-
-    return stack.join('')
-
+// str1 = 'xyzabc', str2 = 'abcxyz'
+const getSmallerWord = (str1, str2) => {
+    for (let i = 0; i < str2.length; i++) {
+      let char1 = str1[i] ?? 'z'
+      let char2 = str2[i]
+      if (char2.charCodeAt(0) < char1.charCodeAt(0)) {
+        return str2
+      }
+    }
+    return str1
 }
-
-const ans = smallestUniqueSubstr('xyzabcxyzabc')
+  
+  
+  
+const removeDuplicateChars = (str) => {
+  
+    let i = 0, j = i + 1
+    let set = new Set(str[i])
+    let tempAnswer = ''
+    while (j < str.length) {
+  
+      let char = str[j]
+  
+      if (!set.has(char)) {
+        set.add(char)
+        j++
+        tempAnswer = getSmallerWord(tempAnswer, str.slice(i, j))
+      } else {
+        set.delete(str[i++])
+      }
+    }
+  
+    return tempAnswer
+  }
+  
+const ans = removeDuplicateChars('xyzabcxyzabc')
 console.log(ans)

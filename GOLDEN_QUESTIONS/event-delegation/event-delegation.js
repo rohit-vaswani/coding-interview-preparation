@@ -14,7 +14,7 @@
         TODO_TAKEAWAY:
             a)
         TODO_REMEMBER:
-            a) Callback of an event gives event object containing {target, parentElement, tagName}
+            a) Callback of an event gives event object containing {target, parentElement}
             b) Stop propagation and stopImmediate propagation is registered on the event object.
             c) addEventListener and removeEventListener are used to register/un-register event
             d) Window.addEventListener('DOMConentLoaded', () => {})
@@ -24,15 +24,6 @@
             c) When an event happens, iterate over the event target and it's parentElement. process all the registered event handlers whose predicate is true.
 
 */
-
-
-
-
-
-
-
-
-
 
 
 
@@ -75,6 +66,7 @@ function onClick(rootNode, predicate, eventHandler) {
             stopImmediatePropagation = true
         }
 
+        // TODO_REMEMBER: TO ITERATIVELY MOVE UPWARDS
         let targetElem = event.target
         while ((targetElem || targetElem === rootNode) && !stopPropagation) {
             runEvents(targetElem, event, eventHandlers)

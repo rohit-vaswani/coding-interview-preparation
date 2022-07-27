@@ -225,8 +225,6 @@ DS or built-in or helper functions
     - Do the dry run
 
 
-
-
 # Golden Rule
 1. Understand the problem, example, input, output and expectations very clearly [create-a-fake-timer-setInterval]
 2. Understand the problem better
@@ -246,8 +244,6 @@ DS or built-in or helper functions
  - One thing we are sure is to (iterate over the elements) 
 
 
-
-
 # Still Unable to solve the problem
 -- Understand the problem's input and output [create-a-browser-history]
 -- Understand the problem using simpler/minimal/positive/negative example [find-median-of-2-sorted-array, first-failed-commit]
@@ -257,35 +253,36 @@ DS or built-in or helper functions
 
 
 
-
 # STEPS FOR THINKING APPROACH OF THE PROBLEM [4 steps to think when PS is given]
 Understand the problem better by
-- Steps. Sub-Problems to Solve.
-- Cases
-- Helper functions & it's responsibility. Sub-Problems.
+- Steps. Sub-Problems to Solve. [smart-sale]
+- Cases [convert-snake_case-to-camelCase]
+- Helper functions & it's responsibility.
 - Data Structures
-- Declare more variables
-- Keeping example in front
-- Writing comments against each step
-- EXPLAIN THE PROBLEM IN PLAIN ENGLISH
+- Declare more variables [first-missing-positive]
+- Keeping example in front of you. [max-prison-break] [add-comma-to-number]
+- EXPLAIN THE PROBLEM IN PLAIN ENGLISH [event-delegation] [add-comma-to-number]
+- TAKE HELP OF RECURSION, ITERATION, SLIDING APPROACH
 
 
 ## Is this is a recursive problem or iterative problem
 -- Many possible cases at each point of the time? [editDistance, coinChange, maxConnectedBoxes]
 -- is this a repeating problem? [construct-object]
 
-## Recursive approach [decodeStr, construct-object, word-search-iii, logic.3]
+## Recursive approach [decodeStr, construct-object, word-search-iii, logic.3, bus-routes, mirror-elements, maximal-rectangle]
 1. RETURN TYPE: CONFIRM THE RETURN TYPE OF THE FUNCTION, HELPS WRITING AGGREGATION CONDITION EASY* [jump-game]
-3. BASE CONDITION.
-4. NON BASE CONDITION. KNOW POSSIBLE OPTIONS.
-5. AGGREGATION OPERATIONS [Basis return type]
-6. Always take minimal example to understand the problem/solution better.
+2. BASE CONDITION.
+3. NON BASE CONDITION. *KNOW POSSIBLE OPTIONS* [bus-routes] [job-scheduling] [jump-game] [maximal-rectangle]
+4. AGGREGATION OPERATIONS [Basis return type] [With/Without exception] [An extra param, return statement]
+5. Always take minimal example to understand the problem/solution better.
+6. Knowing the function parameters [new Source, agg holder, visited] [bus-routes] [job-scheduling] [mirror-elements] [maximal-rectangle]
 
 ## SLIDING WINDOW APPROACH
 1. Condition to Expand the window
 2. Condition to shrink the window [max-unique-substring]
 3. Condition to fast-forward / back ward the window  (or back)
 4. Always write j< arr.length & capture ans on the expansion. [max-prison-break]
+5. Always capture the sub-answer on each positive step [Don't wait for len-1] [remove-duplicate-letters-in-a-string]
 
 # Iterative Approach [trapping-rain-water, zigzag-conversion]
 1. Think what exactly needs to be done at each iteration [Increase window, call helper function, terminate, find prev min]
